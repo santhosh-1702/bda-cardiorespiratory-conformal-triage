@@ -27,7 +27,7 @@ Once downloaded, place the dataset files in any of the following supported locat
 *Note: The repository ships with deterministic cached feature matrices (`output/cache/capnobase_features.npz`), allowing full reproduction of out-of-distribution conformal benchmark evaluations without requiring the 140MB raw signal download.*
 
 ### Code Availability
-All source code, feature engineering routines, cross-validation splits, model training scripts, conformal prediction calibration algorithms, and visualization tools are open source under the MIT License and publicly accessible at https://github.com/placeholder/bda-cardiorespiratory-conformal-triage. The repository includes:
+All source code, feature engineering routines, cross-validation splits, model training scripts, conformal prediction calibration algorithms, and visualization tools are open source under the MIT License and publicly accessible at https://github.com/santhosh-1702/bda-cardiorespiratory-conformal-triage. The repository includes:
 1. Complete reproduction orchestrators (`run_pipeline.py`) capable of executing all pipeline phases on CPU-only hardware (Intel Core i3, 8GB RAM, no GPU requirement).
 2. Exactly pinned dependency lockfiles (`requirements.txt`).
 3. Machine-readable citation metadata (`CITATION.cff`).

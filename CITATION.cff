@@ -13,7 +13,7 @@ abstract: >-
 version: 1.0.0
 date-released: "2026-10-17"
 license: MIT
-repository-code: "https://github.com/placeholder/bda-cardiorespiratory-conformal-triage"
+repository-code: "https://github.com/santhosh-1702/bda-cardiorespiratory-conformal-triage"
 keywords:
   - photoplethysmography
   - respiratory-rate-estimation

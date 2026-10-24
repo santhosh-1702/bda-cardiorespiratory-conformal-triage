@@ -1,0 +1,1750 @@
+patient_id,fold,method,window_sec,mae,n_windows
+bidmc01,0,Train Mean,6,4.4848,238
+bidmc02,0,Train Mean,6,1.7374,238
+bidmc09,0,Train Mean,6,3.0556,238
+bidmc14,0,Train Mean,6,3.5934,238
+bidmc25,0,Train Mean,6,1.0927,238
+bidmc32,0,Train Mean,6,7.7236,238
+bidmc37,0,Train Mean,6,1.8992,238
+bidmc41,0,Train Mean,6,3.1174,238
+bidmc42,0,Train Mean,6,0.3648,238
+bidmc46,0,Train Mean,6,2.4475,238
+bidmc48,0,Train Mean,6,1.5952,238
+bidmc10,1,Train Mean,6,1.3483,238
+bidmc19,1,Train Mean,6,4.5237,238
+bidmc23,1,Train Mean,6,0.9911,238
+bidmc29,1,Train Mean,6,1.4879,238
+bidmc30,1,Train Mean,6,1.4687,238
+bidmc33,1,Train Mean,6,3.7711,238
+bidmc36,1,Train Mean,6,1.2177,238
+bidmc39,1,Train Mean,6,2.9812,238
+bidmc45,1,Train Mean,6,1.2396,238
+bidmc49,1,Train Mean,6,0.9814,238
+bidmc52,1,Train Mean,6,1.1463,238
+bidmc07,2,Train Mean,6,2.4168,238
+bidmc13,2,Train Mean,6,5.8788,61
+bidmc15,2,Train Mean,6,3.0234,238
+bidmc17,2,Train Mean,6,1.1835,238
+bidmc18,2,Train Mean,6,0.5575,238
+bidmc21,2,Train Mean,6,1.5561,238
+bidmc27,2,Train Mean,6,7.0826,238
+bidmc31,2,Train Mean,6,0.8887,238
+bidmc38,2,Train Mean,6,2.2243,238
+bidmc47,2,Train Mean,6,4.6248,238
+bidmc51,2,Train Mean,6,0.8659,238
+bidmc04,3,Train Mean,6,1.0472,238
+bidmc06,3,Train Mean,6,2.3333,238
+bidmc11,3,Train Mean,6,2.7889,238
+bidmc20,3,Train Mean,6,2.4187,238
+bidmc22,3,Train Mean,6,1.1926,238
+bidmc24,3,Train Mean,6,5.0028,238
+bidmc26,3,Train Mean,6,1.5436,238
+bidmc28,3,Train Mean,6,0.9090,238
+bidmc35,3,Train Mean,6,0.8844,238
+bidmc44,3,Train Mean,6,0.9109,238
+bidmc03,4,Train Mean,6,0.5807,238
+bidmc05,4,Train Mean,6,6.2997,237
+bidmc08,4,Train Mean,6,3.3103,238
+bidmc12,4,Train Mean,6,1.4204,238
+bidmc16,4,Train Mean,6,1.6591,238
+bidmc34,4,Train Mean,6,1.1090,238
+bidmc40,4,Train Mean,6,1.7650,238
+bidmc43,4,Train Mean,6,0.7553,238
+bidmc50,4,Train Mean,6,2.8430,238
+bidmc53,4,Train Mean,6,2.1953,238
+bidmc01,0,Train Median,6,4.4292,238
+bidmc02,0,Train Median,6,1.7864,238
+bidmc09,0,Train Median,6,3.0000,238
+bidmc14,0,Train Median,6,3.5658,238
+bidmc25,0,Train Median,6,1.1254,238
+bidmc32,0,Train Median,6,7.6680,238
+bidmc37,0,Train Median,6,1.8543,238
+bidmc41,0,Train Median,6,3.1730,238
+bidmc42,0,Train Median,6,0.3116,238
+bidmc46,0,Train Median,6,2.4307,238
+bidmc48,0,Train Median,6,1.5560,238
+bidmc10,1,Train Median,6,1.3116,238
+bidmc19,1,Train Median,6,4.5780,238
+bidmc23,1,Train Median,6,0.9433,238
+bidmc29,1,Train Median,6,1.4559,238
+bidmc30,1,Train Median,6,1.4265,238
+bidmc33,1,Train Median,6,3.7521,238
+bidmc36,1,Train Median,6,1.1667,238
+bidmc39,1,Train Median,6,3.0364,238
+bidmc45,1,Train Median,6,1.2948,238
+bidmc49,1,Train Median,6,0.9944,238
+bidmc52,1,Train Median,6,1.0911,238
+bidmc07,2,Train Median,6,2.9054,238
+bidmc13,2,Train Median,6,5.4703,61
+bidmc15,2,Train Median,6,2.5938,238
+bidmc17,2,Train Median,6,1.0868,238
+bidmc18,2,Train Median,6,0.9874,238
+bidmc21,2,Train Median,6,1.6372,238
+bidmc27,2,Train Median,6,6.5981,238
+bidmc31,2,Train Median,6,1.1890,238
+bidmc38,2,Train Median,6,1.9055,238
+bidmc47,2,Train Median,6,5.1134,238
+bidmc51,2,Train Median,6,1.3382,238
+bidmc04,3,Train Median,6,1.3991,238
+bidmc06,3,Train Median,6,1.9013,238
+bidmc11,3,Train Median,6,3.1561,238
+bidmc20,3,Train Median,6,2.8508,238
+bidmc22,3,Train Median,6,0.7606,238
+bidmc24,3,Train Median,6,4.5708,238
+bidmc26,3,Train Median,6,1.7227,238
+bidmc28,3,Train Median,6,0.8102,238
+bidmc35,3,Train Median,6,1.0490,238
+bidmc44,3,Train Median,6,1.3368,238
+bidmc03,4,Train Median,6,0.6043,238
+bidmc05,4,Train Median,6,6.0133,237
+bidmc08,4,Train Median,6,3.5966,238
+bidmc12,4,Train Median,6,1.6204,238
+bidmc16,4,Train Median,6,1.9454,238
+bidmc34,4,Train Median,6,1.0876,238
+bidmc40,4,Train Median,6,1.5861,238
+bidmc43,4,Train Median,6,0.6933,238
+bidmc50,4,Train Median,6,2.5567,238
+bidmc53,4,Train Median,6,2.4566,238
+bidmc01,0,Classical Spectral,6,2.7813,238
+bidmc02,0,Classical Spectral,6,3.8593,238
+bidmc09,0,Classical Spectral,6,3.3644,238
+bidmc14,0,Classical Spectral,6,7.4383,238
+bidmc25,0,Classical Spectral,6,3.1208,238
+bidmc32,0,Classical Spectral,6,4.2461,238
+bidmc37,0,Classical Spectral,6,3.3768,238
+bidmc41,0,Classical Spectral,6,3.9757,238
+bidmc42,0,Classical Spectral,6,1.7574,238
+bidmc46,0,Classical Spectral,6,6.2875,238
+bidmc48,0,Classical Spectral,6,3.4728,238
+bidmc10,1,Classical Spectral,6,3.4516,238
+bidmc19,1,Classical Spectral,6,4.4596,238
+bidmc23,1,Classical Spectral,6,4.3583,238
+bidmc29,1,Classical Spectral,6,3.7441,238
+bidmc30,1,Classical Spectral,6,6.1299,238
+bidmc33,1,Classical Spectral,6,7.1521,238
+bidmc36,1,Classical Spectral,6,6.6146,238
+bidmc39,1,Classical Spectral,6,4.2512,238
+bidmc45,1,Classical Spectral,6,3.7751,238
+bidmc49,1,Classical Spectral,6,3.4070,238
+bidmc52,1,Classical Spectral,6,2.1062,238
+bidmc07,2,Classical Spectral,6,2.7444,238
+bidmc13,2,Classical Spectral,6,7.5419,61
+bidmc15,2,Classical Spectral,6,2.7862,238
+bidmc17,2,Classical Spectral,6,6.6813,238
+bidmc18,2,Classical Spectral,6,2.7623,238
+bidmc21,2,Classical Spectral,6,5.6929,238
+bidmc27,2,Classical Spectral,6,3.8233,238
+bidmc31,2,Classical Spectral,6,2.8285,238
+bidmc38,2,Classical Spectral,6,5.8041,238
+bidmc47,2,Classical Spectral,6,2.7255,238
+bidmc51,2,Classical Spectral,6,2.6885,238
+bidmc04,3,Classical Spectral,6,3.3876,238
+bidmc06,3,Classical Spectral,6,1.8854,238
+bidmc11,3,Classical Spectral,6,3.2252,238
+bidmc20,3,Classical Spectral,6,1.9630,238
+bidmc22,3,Classical Spectral,6,3.1607,238
+bidmc24,3,Classical Spectral,6,2.6790,238
+bidmc26,3,Classical Spectral,6,4.6775,238
+bidmc28,3,Classical Spectral,6,2.7858,238
+bidmc35,3,Classical Spectral,6,4.4987,238
+bidmc44,3,Classical Spectral,6,2.4686,238
+bidmc03,4,Classical Spectral,6,3.0175,238
+bidmc05,4,Classical Spectral,6,3.0741,237
+bidmc08,4,Classical Spectral,6,5.8966,238
+bidmc12,4,Classical Spectral,6,1.7099,238
+bidmc16,4,Classical Spectral,6,2.6917,238
+bidmc34,4,Classical Spectral,6,4.0629,238
+bidmc40,4,Classical Spectral,6,4.4562,238
+bidmc43,4,Classical Spectral,6,5.9806,238
+bidmc50,4,Classical Spectral,6,2.4232,238
+bidmc53,4,Classical Spectral,6,5.0275,238
+bidmc01,0,RIAV,6,5.2356,238
+bidmc02,0,RIAV,6,6.9045,238
+bidmc09,0,RIAV,6,7.0380,238
+bidmc14,0,RIAV,6,7.2860,238
+bidmc25,0,RIAV,6,7.9331,238
+bidmc32,0,RIAV,6,8.7104,238
+bidmc37,0,RIAV,6,4.9436,238
+bidmc41,0,RIAV,6,4.7576,238
+bidmc42,0,RIAV,6,5.9766,238
+bidmc46,0,RIAV,6,6.2247,238
+bidmc48,0,RIAV,6,6.1225,238
+bidmc10,1,RIAV,6,4.2667,238
+bidmc19,1,RIAV,6,7.3371,238
+bidmc23,1,RIAV,6,7.2943,238
+bidmc29,1,RIAV,6,4.7067,238
+bidmc30,1,RIAV,6,8.2896,238
+bidmc33,1,RIAV,6,8.1897,238
+bidmc36,1,RIAV,6,5.1696,238
+bidmc39,1,RIAV,6,4.1071,238
+bidmc45,1,RIAV,6,3.7497,238
+bidmc49,1,RIAV,6,7.1847,238
+bidmc52,1,RIAV,6,3.0439,238
+bidmc07,2,RIAV,6,4.6224,238
+bidmc13,2,RIAV,6,7.5296,61
+bidmc15,2,RIAV,6,3.2338,238
+bidmc17,2,RIAV,6,4.9829,238
+bidmc18,2,RIAV,6,4.2892,238
+bidmc21,2,RIAV,6,6.9731,238
+bidmc27,2,RIAV,6,8.2379,238
+bidmc31,2,RIAV,6,3.1906,238
+bidmc38,2,RIAV,6,5.5652,238
+bidmc47,2,RIAV,6,7.0977,238
+bidmc51,2,RIAV,6,2.9403,238
+bidmc04,3,RIAV,6,5.4307,238
+bidmc06,3,RIAV,6,5.5005,238
+bidmc11,3,RIAV,6,5.4180,238
+bidmc20,3,RIAV,6,2.7060,238
+bidmc22,3,RIAV,6,5.2073,238
+bidmc24,3,RIAV,6,6.8555,238
+bidmc26,3,RIAV,6,5.2071,238
+bidmc28,3,RIAV,6,5.2802,238
+bidmc35,3,RIAV,6,5.3800,238
+bidmc44,3,RIAV,6,2.6556,238
+bidmc03,4,RIAV,6,3.3564,238
+bidmc05,4,RIAV,6,5.8969,237
+bidmc08,4,RIAV,6,9.5191,238
+bidmc12,4,RIAV,6,4.6560,238
+bidmc16,4,RIAV,6,4.6277,238
+bidmc34,4,RIAV,6,5.0201,238
+bidmc40,4,RIAV,6,5.6811,238
+bidmc43,4,RIAV,6,6.3729,238
+bidmc50,4,RIAV,6,5.3305,238
+bidmc53,4,RIAV,6,7.3914,238
+bidmc01,0,RIIV,6,6.7575,238
+bidmc02,0,RIIV,6,6.4219,238
+bidmc09,0,RIIV,6,5.3929,238
+bidmc14,0,RIIV,6,7.4938,238
+bidmc25,0,RIIV,6,4.0543,238
+bidmc32,0,RIIV,6,8.4036,238
+bidmc37,0,RIIV,6,4.7566,238
+bidmc41,0,RIIV,6,4.1934,238
+bidmc42,0,RIIV,6,2.2112,238
+bidmc46,0,RIIV,6,6.2366,238
+bidmc48,0,RIIV,6,3.4038,238
+bidmc10,1,RIIV,6,4.3668,238
+bidmc19,1,RIIV,6,4.4570,238
+bidmc23,1,RIIV,6,6.6292,238
+bidmc29,1,RIIV,6,4.9718,238
+bidmc30,1,RIIV,6,7.0919,238
+bidmc33,1,RIIV,6,7.7113,238
+bidmc36,1,RIIV,6,6.4599,238
+bidmc39,1,RIIV,6,4.9424,238
+bidmc45,1,RIIV,6,3.8011,238
+bidmc49,1,RIIV,6,4.3295,238
+bidmc52,1,RIIV,6,2.7335,238
+bidmc07,2,RIIV,6,5.0464,238
+bidmc13,2,RIIV,6,7.8786,61
+bidmc15,2,RIIV,6,4.3582,238
+bidmc17,2,RIIV,6,7.3842,238
+bidmc18,2,RIIV,6,3.6131,238
+bidmc21,2,RIIV,6,6.5208,238
+bidmc27,2,RIIV,6,5.0730,238
+bidmc31,2,RIIV,6,3.8100,238
+bidmc38,2,RIIV,6,6.5252,238
+bidmc47,2,RIIV,6,3.0334,238
+bidmc51,2,RIIV,6,3.9847,238
+bidmc04,3,RIIV,6,3.7016,238
+bidmc06,3,RIIV,6,2.5099,238
+bidmc11,3,RIIV,6,3.3627,238
+bidmc20,3,RIIV,6,2.3659,238
+bidmc22,3,RIIV,6,5.3074,238
+bidmc24,3,RIIV,6,5.6468,238
+bidmc26,3,RIIV,6,5.0002,238
+bidmc28,3,RIIV,6,3.4968,238
+bidmc35,3,RIIV,6,4.9450,238
+bidmc44,3,RIIV,6,2.7966,238
+bidmc03,4,RIIV,6,3.8027,238
+bidmc05,4,RIIV,6,4.0559,237
+bidmc08,4,RIIV,6,10.4937,238
+bidmc12,4,RIIV,6,3.1541,238
+bidmc16,4,RIIV,6,3.0709,238
+bidmc34,4,RIIV,6,4.7681,238
+bidmc40,4,RIIV,6,4.8020,238
+bidmc43,4,RIIV,6,5.8680,238
+bidmc50,4,RIIV,6,2.6240,238
+bidmc53,4,RIIV,6,6.9080,238
+bidmc01,0,RIFV,6,4.8253,238
+bidmc02,0,RIFV,6,12.1870,238
+bidmc09,0,RIFV,6,7.2272,238
+bidmc14,0,RIFV,6,7.6748,238
+bidmc25,0,RIFV,6,5.9549,238
+bidmc32,0,RIFV,6,7.9891,238
+bidmc37,0,RIFV,6,9.1971,238
+bidmc41,0,RIFV,6,10.0749,238
+bidmc42,0,RIFV,6,2.8408,238
+bidmc46,0,RIFV,6,8.9985,238
+bidmc48,0,RIFV,6,3.1311,238
+bidmc10,1,RIFV,6,8.2146,238
+bidmc19,1,RIFV,6,8.7675,238
+bidmc23,1,RIFV,6,6.4794,238
+bidmc29,1,RIFV,6,7.4287,238
+bidmc30,1,RIFV,6,7.7044,238
+bidmc33,1,RIFV,6,7.6381,238
+bidmc36,1,RIFV,6,5.1112,238
+bidmc39,1,RIFV,6,7.3477,238
+bidmc45,1,RIFV,6,5.1825,238
+bidmc49,1,RIFV,6,6.9823,238
+bidmc52,1,RIFV,6,7.3808,238
+bidmc07,2,RIFV,6,4.8115,238
+bidmc13,2,RIFV,6,9.7049,61
+bidmc15,2,RIFV,6,10.8612,238
+bidmc17,2,RIFV,6,8.6892,238
+bidmc18,2,RIFV,6,8.8375,238
+bidmc21,2,RIFV,6,10.0242,238
+bidmc27,2,RIFV,6,9.0438,238
+bidmc31,2,RIFV,6,5.8536,238
+bidmc38,2,RIFV,6,9.5485,238
+bidmc47,2,RIFV,6,7.7391,238
+bidmc51,2,RIFV,6,8.1792,238
+bidmc04,3,RIFV,6,7.8165,238
+bidmc06,3,RIFV,6,7.7037,238
+bidmc11,3,RIFV,6,5.3986,238
+bidmc20,3,RIFV,6,8.3873,238
+bidmc22,3,RIFV,6,7.1604,238
+bidmc24,3,RIFV,6,8.2746,238
+bidmc26,3,RIFV,6,5.8208,238
+bidmc28,3,RIFV,6,7.3750,238
+bidmc35,3,RIFV,6,6.1267,238
+bidmc44,3,RIFV,6,4.1633,238
+bidmc03,4,RIFV,6,7.4666,238
+bidmc05,4,RIFV,6,8.2986,237
+bidmc08,4,RIFV,6,6.4911,238
+bidmc12,4,RIFV,6,8.1968,238
+bidmc16,4,RIFV,6,8.7967,238
+bidmc34,4,RIFV,6,5.4236,238
+bidmc40,4,RIFV,6,9.2554,238
+bidmc43,4,RIFV,6,5.4546,238
+bidmc50,4,RIFV,6,8.4345,238
+bidmc53,4,RIFV,6,7.5675,238
+bidmc01,0,Fusion (Median),6,3.9412,238
+bidmc02,0,Fusion (Median),6,6.9772,238
+bidmc09,0,Fusion (Median),6,5.0051,238
+bidmc14,0,Fusion (Median),6,6.6803,238
+bidmc25,0,Fusion (Median),6,4.2248,238
+bidmc32,0,Fusion (Median),6,6.7109,238
+bidmc37,0,Fusion (Median),6,4.1671,238
+bidmc41,0,Fusion (Median),6,4.0963,238
+bidmc42,0,Fusion (Median),6,2.1459,238
+bidmc46,0,Fusion (Median),6,5.3340,238
+bidmc48,0,Fusion (Median),6,3.1449,238
+bidmc10,1,Fusion (Median),6,3.7078,238
+bidmc19,1,Fusion (Median),6,5.2611,238
+bidmc23,1,Fusion (Median),6,5.6493,238
+bidmc29,1,Fusion (Median),6,4.1925,238
+bidmc30,1,Fusion (Median),6,6.3291,238
+bidmc33,1,Fusion (Median),6,6.3512,238
+bidmc36,1,Fusion (Median),6,4.3679,238
+bidmc39,1,Fusion (Median),6,4.4573,238
+bidmc45,1,Fusion (Median),6,3.2575,238
+bidmc49,1,Fusion (Median),6,5.5971,238
+bidmc52,1,Fusion (Median),6,2.4809,238
+bidmc07,2,Fusion (Median),6,3.6909,238
+bidmc13,2,Fusion (Median),6,7.5813,61
+bidmc15,2,Fusion (Median),6,3.3385,238
+bidmc17,2,Fusion (Median),6,5.9429,238
+bidmc18,2,Fusion (Median),6,3.4870,238
+bidmc21,2,Fusion (Median),6,6.0409,238
+bidmc27,2,Fusion (Median),6,5.8115,238
+bidmc31,2,Fusion (Median),6,2.7337,238
+bidmc38,2,Fusion (Median),6,5.4842,238
+bidmc47,2,Fusion (Median),6,3.8713,238
+bidmc51,2,Fusion (Median),6,3.0941,238
+bidmc04,3,Fusion (Median),6,3.7621,238
+bidmc06,3,Fusion (Median),6,3.2079,238
+bidmc11,3,Fusion (Median),6,3.3159,238
+bidmc20,3,Fusion (Median),6,2.3552,238
+bidmc22,3,Fusion (Median),6,4.5937,238
+bidmc24,3,Fusion (Median),6,5.7298,238
+bidmc26,3,Fusion (Median),6,3.8256,238
+bidmc28,3,Fusion (Median),6,3.6398,238
+bidmc35,3,Fusion (Median),6,4.0129,238
+bidmc44,3,Fusion (Median),6,2.2664,238
+bidmc03,4,Fusion (Median),6,3.1425,238
+bidmc05,4,Fusion (Median),6,4.3865,237
+bidmc08,4,Fusion (Median),6,9.3272,238
+bidmc12,4,Fusion (Median),6,3.5000,238
+bidmc16,4,Fusion (Median),6,3.1956,238
+bidmc34,4,Fusion (Median),6,3.8720,238
+bidmc40,4,Fusion (Median),6,4.4792,238
+bidmc43,4,Fusion (Median),6,5.0348,238
+bidmc50,4,Fusion (Median),6,3.3612,238
+bidmc53,4,Fusion (Median),6,6.4129,238
+bidmc01,0,Retrained XGBoost,6,4.7922,238
+bidmc02,0,Retrained XGBoost,6,1.8307,238
+bidmc09,0,Retrained XGBoost,6,2.2597,238
+bidmc14,0,Retrained XGBoost,6,3.8469,238
+bidmc25,0,Retrained XGBoost,6,0.9160,238
+bidmc32,0,Retrained XGBoost,6,8.2953,238
+bidmc37,0,Retrained XGBoost,6,1.8002,238
+bidmc41,0,Retrained XGBoost,6,1.4496,238
+bidmc42,0,Retrained XGBoost,6,0.7207,238
+bidmc46,0,Retrained XGBoost,6,2.5397,238
+bidmc48,0,Retrained XGBoost,6,1.3467,238
+bidmc10,1,Retrained XGBoost,6,1.3048,238
+bidmc19,1,Retrained XGBoost,6,4.2146,238
+bidmc23,1,Retrained XGBoost,6,0.9824,238
+bidmc29,1,Retrained XGBoost,6,1.4163,238
+bidmc30,1,Retrained XGBoost,6,2.8736,238
+bidmc33,1,Retrained XGBoost,6,3.7253,238
+bidmc36,1,Retrained XGBoost,6,2.4862,238
+bidmc39,1,Retrained XGBoost,6,2.6956,238
+bidmc45,1,Retrained XGBoost,6,2.7764,238
+bidmc49,1,Retrained XGBoost,6,1.0744,238
+bidmc52,1,Retrained XGBoost,6,0.6472,238
+bidmc07,2,Retrained XGBoost,6,0.6911,238
+bidmc13,2,Retrained XGBoost,6,6.6602,61
+bidmc15,2,Retrained XGBoost,6,2.8856,238
+bidmc17,2,Retrained XGBoost,6,1.2323,238
+bidmc18,2,Retrained XGBoost,6,1.1071,238
+bidmc21,2,Retrained XGBoost,6,2.2632,238
+bidmc27,2,Retrained XGBoost,6,6.7889,238
+bidmc31,2,Retrained XGBoost,6,1.0568,238
+bidmc38,2,Retrained XGBoost,6,2.3954,238
+bidmc47,2,Retrained XGBoost,6,4.0053,238
+bidmc51,2,Retrained XGBoost,6,0.7559,238
+bidmc04,3,Retrained XGBoost,6,1.2693,238
+bidmc06,3,Retrained XGBoost,6,1.5003,238
+bidmc11,3,Retrained XGBoost,6,2.3389,238
+bidmc20,3,Retrained XGBoost,6,2.1687,238
+bidmc22,3,Retrained XGBoost,6,1.8170,238
+bidmc24,3,Retrained XGBoost,6,4.8485,238
+bidmc26,3,Retrained XGBoost,6,1.4677,238
+bidmc28,3,Retrained XGBoost,6,1.1579,238
+bidmc35,3,Retrained XGBoost,6,0.9284,238
+bidmc44,3,Retrained XGBoost,6,0.9702,238
+bidmc03,4,Retrained XGBoost,6,0.6966,238
+bidmc05,4,Retrained XGBoost,6,5.6792,237
+bidmc08,4,Retrained XGBoost,6,2.6313,238
+bidmc12,4,Retrained XGBoost,6,1.3636,238
+bidmc16,4,Retrained XGBoost,6,1.7898,238
+bidmc34,4,Retrained XGBoost,6,1.1659,238
+bidmc40,4,Retrained XGBoost,6,2.0255,238
+bidmc43,4,Retrained XGBoost,6,0.7275,238
+bidmc50,4,Retrained XGBoost,6,2.4652,238
+bidmc53,4,Retrained XGBoost,6,2.2052,238
+bidmc01,0,Train Mean,15,4.4563,233
+bidmc02,0,Train Mean,15,1.7155,233
+bidmc09,0,Train Mean,15,3.0635,233
+bidmc14,0,Train Mean,15,3.4509,233
+bidmc25,0,Train Mean,15,1.0648,233
+bidmc32,0,Train Mean,15,7.7361,233
+bidmc37,0,Train Mean,15,1.8766,233
+bidmc41,0,Train Mean,15,3.1197,233
+bidmc42,0,Train Mean,15,0.3630,233
+bidmc46,0,Train Mean,15,2.3811,233
+bidmc48,0,Train Mean,15,1.5679,233
+bidmc10,1,Train Mean,15,1.3151,233
+bidmc19,1,Train Mean,15,4.5206,233
+bidmc23,1,Train Mean,15,0.9815,233
+bidmc29,1,Train Mean,15,1.4222,233
+bidmc30,1,Train Mean,15,1.4255,233
+bidmc33,1,Train Mean,15,3.6900,233
+bidmc36,1,Train Mean,15,1.2228,233
+bidmc39,1,Train Mean,15,2.9578,233
+bidmc45,1,Train Mean,15,1.2325,233
+bidmc49,1,Train Mean,15,0.9487,233
+bidmc52,1,Train Mean,15,1.1595,233
+bidmc07,2,Train Mean,15,2.4232,233
+bidmc13,2,Train Mean,15,6.3384,64
+bidmc15,2,Train Mean,15,2.9476,233
+bidmc17,2,Train Mean,15,1.1105,233
+bidmc18,2,Train Mean,15,0.5508,233
+bidmc21,2,Train Mean,15,1.4593,233
+bidmc27,2,Train Mean,15,7.1370,233
+bidmc31,2,Train Mean,15,0.7939,233
+bidmc38,2,Train Mean,15,2.1520,233
+bidmc47,2,Train Mean,15,4.6358,233
+bidmc51,2,Train Mean,15,0.8691,233
+bidmc04,3,Train Mean,15,1.0100,233
+bidmc06,3,Train Mean,15,2.3315,233
+bidmc11,3,Train Mean,15,2.7517,233
+bidmc20,3,Train Mean,15,2.4190,233
+bidmc22,3,Train Mean,15,1.2059,233
+bidmc24,3,Train Mean,15,4.9927,233
+bidmc26,3,Train Mean,15,1.5037,233
+bidmc28,3,Train Mean,15,0.8328,233
+bidmc35,3,Train Mean,15,0.8388,233
+bidmc44,3,Train Mean,15,0.9157,233
+bidmc03,4,Train Mean,15,0.5242,233
+bidmc05,4,Train Mean,15,6.2861,233
+bidmc08,4,Train Mean,15,3.3211,233
+bidmc12,4,Train Mean,15,1.4261,233
+bidmc16,4,Train Mean,15,1.6653,233
+bidmc34,4,Train Mean,15,1.0634,233
+bidmc40,4,Train Mean,15,1.7114,233
+bidmc43,4,Train Mean,15,0.7338,233
+bidmc50,4,Train Mean,15,2.8171,233
+bidmc53,4,Train Mean,15,2.1736,233
+bidmc01,0,Train Median,15,4.2595,233
+bidmc02,0,Train Median,15,1.8898,233
+bidmc09,0,Train Median,15,2.8667,233
+bidmc14,0,Train Median,15,3.3425,233
+bidmc25,0,Train Median,15,1.2100,233
+bidmc32,0,Train Median,15,7.5393,233
+bidmc37,0,Train Median,15,1.7159,233
+bidmc41,0,Train Median,15,3.3165,233
+bidmc42,0,Train Median,15,0.3216,233
+bidmc46,0,Train Median,15,2.3562,233
+bidmc48,0,Train Median,15,1.4495,233
+bidmc10,1,Train Median,15,1.2669,233
+bidmc19,1,Train Median,15,4.5920,233
+bidmc23,1,Train Median,15,0.9193,233
+bidmc29,1,Train Median,15,1.3777,233
+bidmc30,1,Train Median,15,1.3639,233
+bidmc33,1,Train Median,15,3.6658,233
+bidmc36,1,Train Median,15,1.1545,233
+bidmc39,1,Train Median,15,3.0292,233
+bidmc45,1,Train Median,15,1.3039,233
+bidmc49,1,Train Median,15,0.9640,233
+bidmc52,1,Train Median,15,1.0881,233
+bidmc07,2,Train Median,15,2.7035,233
+bidmc13,2,Train Median,15,6.0772,64
+bidmc15,2,Train Median,15,2.6958,233
+bidmc17,2,Train Median,15,1.0584,233
+bidmc18,2,Train Median,15,0.7925,233
+bidmc21,2,Train Median,15,1.5067,233
+bidmc27,2,Train Median,15,6.8567,233
+bidmc31,2,Train Median,15,0.9808,233
+bidmc38,2,Train Median,15,1.9774,233
+bidmc47,2,Train Median,15,4.9162,233
+bidmc51,2,Train Median,15,1.1430,233
+bidmc04,3,Train Median,15,1.1994,233
+bidmc06,3,Train Median,15,2.0990,233
+bidmc11,3,Train Median,15,2.9474,233
+bidmc20,3,Train Median,15,2.6515,233
+bidmc22,3,Train Median,15,0.9734,233
+bidmc24,3,Train Median,15,4.7602,233
+bidmc26,3,Train Median,15,1.5997,233
+bidmc28,3,Train Median,15,0.7820,233
+bidmc35,3,Train Median,15,0.9436,233
+bidmc44,3,Train Median,15,1.1482,233
+bidmc03,4,Train Median,15,0.5491,233
+bidmc05,4,Train Median,15,6.0492,233
+bidmc08,4,Train Median,15,3.5579,233
+bidmc12,4,Train Median,15,1.5888,233
+bidmc16,4,Train Median,15,1.9022,233
+bidmc34,4,Train Median,15,1.0392,233
+bidmc40,4,Train Median,15,1.5482,233
+bidmc43,4,Train Median,15,0.6690,233
+bidmc50,4,Train Median,15,2.5803,233
+bidmc53,4,Train Median,15,2.3880,233
+bidmc01,0,Classical Spectral,15,2.0776,233
+bidmc02,0,Classical Spectral,15,1.8758,233
+bidmc09,0,Classical Spectral,15,1.7668,233
+bidmc14,0,Classical Spectral,15,6.9396,233
+bidmc25,0,Classical Spectral,15,2.0707,233
+bidmc32,0,Classical Spectral,15,3.6416,233
+bidmc37,0,Classical Spectral,15,2.9623,233
+bidmc41,0,Classical Spectral,15,2.9065,233
+bidmc42,0,Classical Spectral,15,0.9459,233
+bidmc46,0,Classical Spectral,15,6.2302,233
+bidmc48,0,Classical Spectral,15,3.0480,233
+bidmc10,1,Classical Spectral,15,2.7753,233
+bidmc19,1,Classical Spectral,15,3.5974,233
+bidmc23,1,Classical Spectral,15,4.0160,233
+bidmc29,1,Classical Spectral,15,2.5480,233
+bidmc30,1,Classical Spectral,15,6.6925,233
+bidmc33,1,Classical Spectral,15,6.7640,233
+bidmc36,1,Classical Spectral,15,7.4137,233
+bidmc39,1,Classical Spectral,15,2.7719,233
+bidmc45,1,Classical Spectral,15,2.4867,233
+bidmc49,1,Classical Spectral,15,2.4052,233
+bidmc52,1,Classical Spectral,15,1.1436,233
+bidmc07,2,Classical Spectral,15,1.2584,233
+bidmc13,2,Classical Spectral,15,7.5513,64
+bidmc15,2,Classical Spectral,15,1.8419,233
+bidmc17,2,Classical Spectral,15,5.5434,233
+bidmc18,2,Classical Spectral,15,1.5791,233
+bidmc21,2,Classical Spectral,15,5.9664,233
+bidmc27,2,Classical Spectral,15,1.5363,233
+bidmc31,2,Classical Spectral,15,1.5548,233
+bidmc38,2,Classical Spectral,15,5.1506,233
+bidmc47,2,Classical Spectral,15,1.3145,233
+bidmc51,2,Classical Spectral,15,1.4909,233
+bidmc04,3,Classical Spectral,15,2.2040,233
+bidmc06,3,Classical Spectral,15,0.9312,233
+bidmc11,3,Classical Spectral,15,2.1881,233
+bidmc20,3,Classical Spectral,15,0.8859,233
+bidmc22,3,Classical Spectral,15,2.1099,233
+bidmc24,3,Classical Spectral,15,1.2009,233
+bidmc26,3,Classical Spectral,15,3.6748,233
+bidmc28,3,Classical Spectral,15,1.8821,233
+bidmc35,3,Classical Spectral,15,3.4242,233
+bidmc44,3,Classical Spectral,15,1.3927,233
+bidmc03,4,Classical Spectral,15,2.4594,233
+bidmc05,4,Classical Spectral,15,3.0384,233
+bidmc08,4,Classical Spectral,15,4.9078,233
+bidmc12,4,Classical Spectral,15,0.8714,233
+bidmc16,4,Classical Spectral,15,1.5624,233
+bidmc34,4,Classical Spectral,15,3.0844,233
+bidmc40,4,Classical Spectral,15,3.9514,233
+bidmc43,4,Classical Spectral,15,6.4259,233
+bidmc50,4,Classical Spectral,15,1.4273,233
+bidmc53,4,Classical Spectral,15,3.5563,233
+bidmc01,0,RIAV,15,4.4217,233
+bidmc02,0,RIAV,15,5.2855,233
+bidmc09,0,RIAV,15,9.7582,233
+bidmc14,0,RIAV,15,9.6460,233
+bidmc25,0,RIAV,15,6.0703,233
+bidmc32,0,RIAV,15,12.8528,233
+bidmc37,0,RIAV,15,4.8132,233
+bidmc41,0,RIAV,15,3.6158,233
+bidmc42,0,RIAV,15,6.8622,233
+bidmc46,0,RIAV,15,6.7937,233
+bidmc48,0,RIAV,15,7.7376,233
+bidmc10,1,RIAV,15,4.4816,233
+bidmc19,1,RIAV,15,6.2741,233
+bidmc23,1,RIAV,15,7.1564,233
+bidmc29,1,RIAV,15,5.0146,233
+bidmc30,1,RIAV,15,9.6567,233
+bidmc33,1,RIAV,15,8.2429,233
+bidmc36,1,RIAV,15,7.5381,233
+bidmc39,1,RIAV,15,2.8709,233
+bidmc45,1,RIAV,15,5.2559,233
+bidmc49,1,RIAV,15,6.2108,233
+bidmc52,1,RIAV,15,2.1131,233
+bidmc07,2,RIAV,15,3.3563,233
+bidmc13,2,RIAV,15,8.4624,64
+bidmc15,2,RIAV,15,2.4580,233
+bidmc17,2,RIAV,15,4.9685,233
+bidmc18,2,RIAV,15,5.6632,233
+bidmc21,2,RIAV,15,8.1869,233
+bidmc27,2,RIAV,15,5.9259,233
+bidmc31,2,RIAV,15,3.3132,233
+bidmc38,2,RIAV,15,5.7410,233
+bidmc47,2,RIAV,15,7.2670,233
+bidmc51,2,RIAV,15,3.4053,233
+bidmc04,3,RIAV,15,5.3770,233
+bidmc06,3,RIAV,15,3.7939,233
+bidmc11,3,RIAV,15,5.9669,233
+bidmc20,3,RIAV,15,0.9322,233
+bidmc22,3,RIAV,15,6.4500,233
+bidmc24,3,RIAV,15,7.0680,233
+bidmc26,3,RIAV,15,4.4627,233
+bidmc28,3,RIAV,15,3.8192,233
+bidmc35,3,RIAV,15,4.5144,233
+bidmc44,3,RIAV,15,2.0489,233
+bidmc03,4,RIAV,15,3.4452,233
+bidmc05,4,RIAV,15,4.4300,233
+bidmc08,4,RIAV,15,5.0670,233
+bidmc12,4,RIAV,15,3.0073,233
+bidmc16,4,RIAV,15,3.2002,233
+bidmc34,4,RIAV,15,5.6725,233
+bidmc40,4,RIAV,15,6.2121,233
+bidmc43,4,RIAV,15,8.4724,233
+bidmc50,4,RIAV,15,3.4735,233
+bidmc53,4,RIAV,15,7.9432,233
+bidmc01,0,RIIV,15,8.3420,233
+bidmc02,0,RIIV,15,4.2346,233
+bidmc09,0,RIIV,15,6.6477,233
+bidmc14,0,RIIV,15,7.1631,233
+bidmc25,0,RIIV,15,2.2805,233
+bidmc32,0,RIIV,15,11.3281,233
+bidmc37,0,RIIV,15,3.9430,233
+bidmc41,0,RIIV,15,2.4774,233
+bidmc42,0,RIIV,15,1.1336,233
+bidmc46,0,RIIV,15,7.0623,233
+bidmc48,0,RIIV,15,3.1089,233
+bidmc10,1,RIIV,15,3.9878,233
+bidmc19,1,RIIV,15,3.6522,233
+bidmc23,1,RIIV,15,5.9455,233
+bidmc29,1,RIIV,15,4.4630,233
+bidmc30,1,RIIV,15,8.6847,233
+bidmc33,1,RIIV,15,6.5591,233
+bidmc36,1,RIIV,15,8.6329,233
+bidmc39,1,RIIV,15,2.8743,233
+bidmc45,1,RIIV,15,5.1698,233
+bidmc49,1,RIIV,15,3.2717,233
+bidmc52,1,RIIV,15,1.4535,233
+bidmc07,2,RIIV,15,3.4417,233
+bidmc13,2,RIIV,15,8.2225,64
+bidmc15,2,RIIV,15,3.1520,233
+bidmc17,2,RIIV,15,5.7516,233
+bidmc18,2,RIIV,15,3.4055,233
+bidmc21,2,RIIV,15,6.1264,233
+bidmc27,2,RIIV,15,2.2535,233
+bidmc31,2,RIIV,15,3.0863,233
+bidmc38,2,RIIV,15,6.0715,233
+bidmc47,2,RIIV,15,1.7474,233
+bidmc51,2,RIIV,15,4.3490,233
+bidmc04,3,RIIV,15,2.2151,233
+bidmc06,3,RIIV,15,1.3481,233
+bidmc11,3,RIIV,15,2.5282,233
+bidmc20,3,RIIV,15,0.9216,233
+bidmc22,3,RIIV,15,6.1410,233
+bidmc24,3,RIIV,15,4.6426,233
+bidmc26,3,RIIV,15,3.7615,233
+bidmc28,3,RIIV,15,2.0698,233
+bidmc35,3,RIIV,15,4.0917,233
+bidmc44,3,RIIV,15,2.4125,233
+bidmc03,4,RIIV,15,4.0309,233
+bidmc05,4,RIIV,15,3.6557,233
+bidmc08,4,RIIV,15,6.6004,233
+bidmc12,4,RIIV,15,1.8400,233
+bidmc16,4,RIIV,15,1.5662,233
+bidmc34,4,RIIV,15,4.5323,233
+bidmc40,4,RIIV,15,4.3172,233
+bidmc43,4,RIIV,15,7.5100,233
+bidmc50,4,RIIV,15,1.3826,233
+bidmc53,4,RIIV,15,6.3066,233
+bidmc01,0,RIFV,15,3.2658,233
+bidmc02,0,RIFV,15,12.2147,233
+bidmc09,0,RIFV,15,6.7144,233
+bidmc14,0,RIFV,15,7.9988,233
+bidmc25,0,RIFV,15,5.9637,233
+bidmc32,0,RIFV,15,7.9646,233
+bidmc37,0,RIFV,15,9.8170,233
+bidmc41,0,RIFV,15,8.0873,233
+bidmc42,0,RIFV,15,1.3835,233
+bidmc46,0,RIFV,15,9.6049,233
+bidmc48,0,RIFV,15,3.8729,233
+bidmc10,1,RIFV,15,9.9290,233
+bidmc19,1,RIFV,15,7.1995,233
+bidmc23,1,RIFV,15,7.7817,233
+bidmc29,1,RIFV,15,6.8455,233
+bidmc30,1,RIFV,15,11.3060,233
+bidmc33,1,RIFV,15,6.8878,233
+bidmc36,1,RIFV,15,6.6259,233
+bidmc39,1,RIFV,15,6.5791,233
+bidmc45,1,RIFV,15,9.1096,233
+bidmc49,1,RIFV,15,7.1711,233
+bidmc52,1,RIFV,15,5.4068,233
+bidmc07,2,RIFV,15,1.4353,233
+bidmc13,2,RIFV,15,9.6462,64
+bidmc15,2,RIFV,15,10.5244,233
+bidmc17,2,RIFV,15,8.8707,233
+bidmc18,2,RIFV,15,10.6500,233
+bidmc21,2,RIFV,15,10.8879,233
+bidmc27,2,RIFV,15,5.0511,233
+bidmc31,2,RIFV,15,6.4116,233
+bidmc38,2,RIFV,15,9.4984,233
+bidmc47,2,RIFV,15,7.8944,233
+bidmc51,2,RIFV,15,10.7472,233
+bidmc04,3,RIFV,15,8.6165,233
+bidmc06,3,RIFV,15,8.8243,233
+bidmc11,3,RIFV,15,5.9482,233
+bidmc20,3,RIFV,15,8.0746,233
+bidmc22,3,RIFV,15,11.2682,233
+bidmc24,3,RIFV,15,9.7299,233
+bidmc26,3,RIFV,15,6.1342,233
+bidmc28,3,RIFV,15,7.0123,233
+bidmc35,3,RIFV,15,5.9245,233
+bidmc44,3,RIFV,15,2.8526,233
+bidmc03,4,RIFV,15,6.9808,233
+bidmc05,4,RIFV,15,5.7539,233
+bidmc08,4,RIFV,15,2.8778,233
+bidmc12,4,RIFV,15,7.7431,233
+bidmc16,4,RIFV,15,8.1815,233
+bidmc34,4,RIFV,15,6.4999,233
+bidmc40,4,RIFV,15,9.4826,233
+bidmc43,4,RIFV,15,7.2106,233
+bidmc50,4,RIFV,15,7.7712,233
+bidmc53,4,RIFV,15,8.2937,233
+bidmc01,0,Fusion (Median),15,4.0032,233
+bidmc02,0,Fusion (Median),15,4.7494,233
+bidmc09,0,Fusion (Median),15,7.1447,233
+bidmc14,0,Fusion (Median),15,7.9182,233
+bidmc25,0,Fusion (Median),15,2.6265,233
+bidmc32,0,Fusion (Median),15,10.1317,233
+bidmc37,0,Fusion (Median),15,4.0789,233
+bidmc41,0,Fusion (Median),15,2.8536,233
+bidmc42,0,Fusion (Median),15,1.3412,233
+bidmc46,0,Fusion (Median),15,6.7904,233
+bidmc48,0,Fusion (Median),15,3.7270,233
+bidmc10,1,Fusion (Median),15,4.1555,233
+bidmc19,1,Fusion (Median),15,4.2148,233
+bidmc23,1,Fusion (Median),15,6.5909,233
+bidmc29,1,Fusion (Median),15,3.6304,233
+bidmc30,1,Fusion (Median),15,9.9139,233
+bidmc33,1,Fusion (Median),15,6.1075,233
+bidmc36,1,Fusion (Median),15,7.7587,233
+bidmc39,1,Fusion (Median),15,2.7825,233
+bidmc45,1,Fusion (Median),15,6.0907,233
+bidmc49,1,Fusion (Median),15,4.8401,233
+bidmc52,1,Fusion (Median),15,1.5459,233
+bidmc07,2,Fusion (Median),15,2.0829,233
+bidmc13,2,Fusion (Median),15,8.5532,64
+bidmc15,2,Fusion (Median),15,2.4358,233
+bidmc17,2,Fusion (Median),15,5.0329,233
+bidmc18,2,Fusion (Median),15,5.9027,233
+bidmc21,2,Fusion (Median),15,6.9224,233
+bidmc27,2,Fusion (Median),15,2.7700,233
+bidmc31,2,Fusion (Median),15,3.0744,233
+bidmc38,2,Fusion (Median),15,4.8577,233
+bidmc47,2,Fusion (Median),15,4.3707,233
+bidmc51,2,Fusion (Median),15,4.1174,233
+bidmc04,3,Fusion (Median),15,3.6370,233
+bidmc06,3,Fusion (Median),15,2.6987,233
+bidmc11,3,Fusion (Median),15,4.8294,233
+bidmc20,3,Fusion (Median),15,0.9082,233
+bidmc22,3,Fusion (Median),15,7.6152,233
+bidmc24,3,Fusion (Median),15,6.3758,233
+bidmc26,3,Fusion (Median),15,3.3305,233
+bidmc28,3,Fusion (Median),15,2.6872,233
+bidmc35,3,Fusion (Median),15,3.3863,233
+bidmc44,3,Fusion (Median),15,1.7270,233
+bidmc03,4,Fusion (Median),15,3.1350,233
+bidmc05,4,Fusion (Median),15,3.3109,233
+bidmc08,4,Fusion (Median),15,4.1774,233
+bidmc12,4,Fusion (Median),15,2.0470,233
+bidmc16,4,Fusion (Median),15,1.7062,233
+bidmc34,4,Fusion (Median),15,4.9358,233
+bidmc40,4,Fusion (Median),15,5.1360,233
+bidmc43,4,Fusion (Median),15,8.1942,233
+bidmc50,4,Fusion (Median),15,1.9071,233
+bidmc53,4,Fusion (Median),15,7.0543,233
+bidmc01,0,Retrained XGBoost,15,5.8285,233
+bidmc02,0,Retrained XGBoost,15,1.7253,233
+bidmc09,0,Retrained XGBoost,15,1.6867,233
+bidmc14,0,Retrained XGBoost,15,3.6450,233
+bidmc25,0,Retrained XGBoost,15,1.2486,233
+bidmc32,0,Retrained XGBoost,15,8.5107,233
+bidmc37,0,Retrained XGBoost,15,1.5627,233
+bidmc41,0,Retrained XGBoost,15,1.3358,233
+bidmc42,0,Retrained XGBoost,15,0.9489,233
+bidmc46,0,Retrained XGBoost,15,2.5955,233
+bidmc48,0,Retrained XGBoost,15,1.0943,233
+bidmc10,1,Retrained XGBoost,15,1.1529,233
+bidmc19,1,Retrained XGBoost,15,3.7070,233
+bidmc23,1,Retrained XGBoost,15,1.7643,233
+bidmc29,1,Retrained XGBoost,15,1.2083,233
+bidmc30,1,Retrained XGBoost,15,2.8849,233
+bidmc33,1,Retrained XGBoost,15,3.8266,233
+bidmc36,1,Retrained XGBoost,15,2.1491,233
+bidmc39,1,Retrained XGBoost,15,2.5627,233
+bidmc45,1,Retrained XGBoost,15,2.5054,233
+bidmc49,1,Retrained XGBoost,15,0.9454,233
+bidmc52,1,Retrained XGBoost,15,0.6960,233
+bidmc07,2,Retrained XGBoost,15,0.3539,233
+bidmc13,2,Retrained XGBoost,15,7.4625,64
+bidmc15,2,Retrained XGBoost,15,2.5554,233
+bidmc17,2,Retrained XGBoost,15,1.0711,233
+bidmc18,2,Retrained XGBoost,15,0.7858,233
+bidmc21,2,Retrained XGBoost,15,2.3604,233
+bidmc27,2,Retrained XGBoost,15,7.9155,233
+bidmc31,2,Retrained XGBoost,15,0.6821,233
+bidmc38,2,Retrained XGBoost,15,2.2288,233
+bidmc47,2,Retrained XGBoost,15,3.7180,233
+bidmc51,2,Retrained XGBoost,15,0.4723,233
+bidmc04,3,Retrained XGBoost,15,0.8346,233
+bidmc06,3,Retrained XGBoost,15,0.6551,233
+bidmc11,3,Retrained XGBoost,15,1.8545,233
+bidmc20,3,Retrained XGBoost,15,1.3629,233
+bidmc22,3,Retrained XGBoost,15,1.5672,233
+bidmc24,3,Retrained XGBoost,15,4.6069,233
+bidmc26,3,Retrained XGBoost,15,1.4459,233
+bidmc28,3,Retrained XGBoost,15,1.4838,233
+bidmc35,3,Retrained XGBoost,15,0.8677,233
+bidmc44,3,Retrained XGBoost,15,0.9164,233
+bidmc03,4,Retrained XGBoost,15,0.6148,233
+bidmc05,4,Retrained XGBoost,15,5.7385,233
+bidmc08,4,Retrained XGBoost,15,2.2838,233
+bidmc12,4,Retrained XGBoost,15,1.1633,233
+bidmc16,4,Retrained XGBoost,15,1.4280,233
+bidmc34,4,Retrained XGBoost,15,1.1213,233
+bidmc40,4,Retrained XGBoost,15,2.2704,233
+bidmc43,4,Retrained XGBoost,15,0.7610,233
+bidmc50,4,Retrained XGBoost,15,1.9679,233
+bidmc53,4,Retrained XGBoost,15,1.4862,233
+bidmc01,0,Train Mean,30,4.3965,226
+bidmc02,0,Train Mean,30,1.6787,226
+bidmc09,0,Train Mean,30,3.0670,226
+bidmc14,0,Train Mean,30,3.0922,226
+bidmc25,0,Train Mean,30,1.0125,226
+bidmc32,0,Train Mean,30,7.7404,226
+bidmc37,0,Train Mean,30,1.8197,226
+bidmc41,0,Train Mean,30,3.1305,226
+bidmc42,0,Train Mean,30,0.3600,226
+bidmc46,0,Train Mean,30,2.2828,226
+bidmc48,0,Train Mean,30,1.4782,226
+bidmc10,1,Train Mean,30,1.2440,226
+bidmc19,1,Train Mean,30,4.5440,226
+bidmc23,1,Train Mean,30,0.9629,226
+bidmc29,1,Train Mean,30,1.3759,226
+bidmc30,1,Train Mean,30,1.4081,226
+bidmc33,1,Train Mean,30,3.5286,226
+bidmc36,1,Train Mean,30,1.2362,226
+bidmc39,1,Train Mean,30,2.9141,226
+bidmc45,1,Train Mean,30,1.2190,226
+bidmc49,1,Train Mean,30,0.8824,226
+bidmc52,1,Train Mean,30,1.1888,226
+bidmc07,2,Train Mean,30,2.4311,226
+bidmc13,2,Train Mean,30,7.7666,65
+bidmc15,2,Train Mean,30,2.8563,226
+bidmc17,2,Train Mean,30,0.9842,226
+bidmc18,2,Train Mean,30,0.5350,226
+bidmc21,2,Train Mean,30,1.2846,226
+bidmc27,2,Train Mean,30,7.1698,226
+bidmc31,2,Train Mean,30,0.6952,226
+bidmc38,2,Train Mean,30,1.9965,226
+bidmc47,2,Train Mean,30,4.6501,226
+bidmc51,2,Train Mean,30,0.8935,226
+bidmc04,3,Train Mean,30,0.9613,226
+bidmc06,3,Train Mean,30,2.3259,226
+bidmc11,3,Train Mean,30,2.6613,226
+bidmc20,3,Train Mean,30,2.4314,226
+bidmc22,3,Train Mean,30,1.2127,226
+bidmc24,3,Train Mean,30,4.9660,226
+bidmc26,3,Train Mean,30,1.3990,226
+bidmc28,3,Train Mean,30,0.6847,226
+bidmc35,3,Train Mean,30,0.7581,226
+bidmc44,3,Train Mean,30,0.9207,226
+bidmc03,4,Train Mean,30,0.4342,226
+bidmc05,4,Train Mean,30,6.2379,226
+bidmc08,4,Train Mean,30,3.3479,226
+bidmc12,4,Train Mean,30,1.4285,226
+bidmc16,4,Train Mean,30,1.7040,226
+bidmc34,4,Train Mean,30,1.0140,226
+bidmc40,4,Train Mean,30,1.5547,226
+bidmc43,4,Train Mean,30,0.7173,226
+bidmc50,4,Train Mean,30,2.7853,226
+bidmc53,4,Train Mean,30,2.1167,226
+bidmc01,0,Train Median,30,4.1295,226
+bidmc02,0,Train Median,30,1.9173,226
+bidmc09,0,Train Median,30,2.8000,226
+bidmc14,0,Train Median,30,2.9204,226
+bidmc25,0,Train Median,30,1.2133,226
+bidmc32,0,Train Median,30,7.4734,226
+bidmc37,0,Train Median,30,1.5979,226
+bidmc41,0,Train Median,30,3.3975,226
+bidmc42,0,Train Median,30,0.2969,226
+bidmc46,0,Train Median,30,2.2762,226
+bidmc48,0,Train Median,30,1.3078,226
+bidmc10,1,Train Median,30,1.1129,226
+bidmc19,1,Train Median,30,4.7413,226
+bidmc23,1,Train Median,30,0.7959,226
+bidmc29,1,Train Median,30,1.2401,226
+bidmc30,1,Train Median,30,1.2198,226
+bidmc33,1,Train Median,30,3.4503,226
+bidmc36,1,Train Median,30,1.0389,226
+bidmc39,1,Train Median,30,3.1114,226
+bidmc45,1,Train Median,30,1.4163,226
+bidmc49,1,Train Median,30,0.9080,226
+bidmc52,1,Train Median,30,0.9915,226
+bidmc07,2,Train Median,30,2.6338,226
+bidmc13,2,Train Median,30,7.5639,65
+bidmc15,2,Train Median,30,2.6620,226
+bidmc17,2,Train Median,30,0.9493,226
+bidmc18,2,Train Median,30,0.7035,226
+bidmc21,2,Train Median,30,1.3165,226
+bidmc27,2,Train Median,30,6.9671,226
+bidmc31,2,Train Median,30,0.8339,226
+bidmc38,2,Train Median,30,1.8751,226
+bidmc47,2,Train Median,30,4.8528,226
+bidmc51,2,Train Median,30,1.0962,226
+bidmc04,3,Train Median,30,1.1569,226
+bidmc06,3,Train Median,30,2.0960,226
+bidmc11,3,Train Median,30,2.8484,226
+bidmc20,3,Train Median,30,2.6612,226
+bidmc22,3,Train Median,30,0.9829,226
+bidmc24,3,Train Median,30,4.7361,226
+bidmc26,3,Train Median,30,1.5142,226
+bidmc28,3,Train Median,30,0.6302,226
+bidmc35,3,Train Median,30,0.9054,226
+bidmc44,3,Train Median,30,1.1506,226
+bidmc03,4,Train Median,30,0.4692,226
+bidmc05,4,Train Median,30,6.0596,226
+bidmc08,4,Train Median,30,3.5263,226
+bidmc12,4,Train Median,30,1.5499,226
+bidmc16,4,Train Median,30,1.8823,226
+bidmc34,4,Train Median,30,0.9885,226
+bidmc40,4,Train Median,30,1.4345,226
+bidmc43,4,Train Median,30,0.6451,226
+bidmc50,4,Train Median,30,2.6069,226
+bidmc53,4,Train Median,30,2.2749,226
+bidmc01,0,Classical Spectral,30,1.8904,226
+bidmc02,0,Classical Spectral,30,0.9630,226
+bidmc09,0,Classical Spectral,30,1.0196,226
+bidmc14,0,Classical Spectral,30,6.9521,226
+bidmc25,0,Classical Spectral,30,1.6110,226
+bidmc32,0,Classical Spectral,30,3.0425,226
+bidmc37,0,Classical Spectral,30,2.4657,226
+bidmc41,0,Classical Spectral,30,2.8283,226
+bidmc42,0,Classical Spectral,30,0.7410,226
+bidmc46,0,Classical Spectral,30,5.7942,226
+bidmc48,0,Classical Spectral,30,2.7825,226
+bidmc10,1,Classical Spectral,30,2.7598,226
+bidmc19,1,Classical Spectral,30,3.5403,226
+bidmc23,1,Classical Spectral,30,3.8578,226
+bidmc29,1,Classical Spectral,30,2.1597,226
+bidmc30,1,Classical Spectral,30,6.5048,226
+bidmc33,1,Classical Spectral,30,6.5402,226
+bidmc36,1,Classical Spectral,30,8.2698,226
+bidmc39,1,Classical Spectral,30,1.0623,226
+bidmc45,1,Classical Spectral,30,2.0731,226
+bidmc49,1,Classical Spectral,30,1.7991,226
+bidmc52,1,Classical Spectral,30,0.8391,226
+bidmc07,2,Classical Spectral,30,0.4370,226
+bidmc13,2,Classical Spectral,30,7.5495,65
+bidmc15,2,Classical Spectral,30,1.6770,226
+bidmc17,2,Classical Spectral,30,4.5035,226
+bidmc18,2,Classical Spectral,30,0.6672,226
+bidmc21,2,Classical Spectral,30,5.8701,226
+bidmc27,2,Classical Spectral,30,0.9559,226
+bidmc31,2,Classical Spectral,30,1.0311,226
+bidmc38,2,Classical Spectral,30,4.3898,226
+bidmc47,2,Classical Spectral,30,1.2003,226
+bidmc51,2,Classical Spectral,30,0.9441,226
+bidmc04,3,Classical Spectral,30,1.5508,226
+bidmc06,3,Classical Spectral,30,0.5384,226
+bidmc11,3,Classical Spectral,30,1.6568,226
+bidmc20,3,Classical Spectral,30,0.6653,226
+bidmc22,3,Classical Spectral,30,1.2450,226
+bidmc24,3,Classical Spectral,30,0.8284,226
+bidmc26,3,Classical Spectral,30,3.2860,226
+bidmc28,3,Classical Spectral,30,1.5175,226
+bidmc35,3,Classical Spectral,30,3.1210,226
+bidmc44,3,Classical Spectral,30,1.2235,226
+bidmc03,4,Classical Spectral,30,2.3646,226
+bidmc05,4,Classical Spectral,30,2.9877,226
+bidmc08,4,Classical Spectral,30,4.0743,226
+bidmc12,4,Classical Spectral,30,0.6201,226
+bidmc16,4,Classical Spectral,30,1.2358,226
+bidmc34,4,Classical Spectral,30,2.3524,226
+bidmc40,4,Classical Spectral,30,3.6060,226
+bidmc43,4,Classical Spectral,30,6.7903,226
+bidmc50,4,Classical Spectral,30,1.2403,226
+bidmc53,4,Classical Spectral,30,2.9874,226
+bidmc01,0,RIAV,30,2.8966,226
+bidmc02,0,RIAV,30,4.0849,226
+bidmc09,0,RIAV,30,8.3618,226
+bidmc14,0,RIAV,30,9.8125,226
+bidmc25,0,RIAV,30,5.2008,226
+bidmc32,0,RIAV,30,11.7488,226
+bidmc37,0,RIAV,30,2.8671,226
+bidmc41,0,RIAV,30,2.3622,226
+bidmc42,0,RIAV,30,6.5599,226
+bidmc46,0,RIAV,30,6.3874,226
+bidmc48,0,RIAV,30,7.1773,226
+bidmc10,1,RIAV,30,3.4284,226
+bidmc19,1,RIAV,30,5.7332,226
+bidmc23,1,RIAV,30,6.5897,226
+bidmc29,1,RIAV,30,4.0281,226
+bidmc30,1,RIAV,30,8.6856,226
+bidmc33,1,RIAV,30,8.4089,226
+bidmc36,1,RIAV,30,7.9728,226
+bidmc39,1,RIAV,30,1.9571,226
+bidmc45,1,RIAV,30,3.7741,226
+bidmc49,1,RIAV,30,4.9135,226
+bidmc52,1,RIAV,30,1.1991,226
+bidmc07,2,RIAV,30,1.7262,226
+bidmc13,2,RIAV,30,8.7915,65
+bidmc15,2,RIAV,30,1.8096,226
+bidmc17,2,RIAV,30,4.0715,226
+bidmc18,2,RIAV,30,3.8942,226
+bidmc21,2,RIAV,30,7.8269,226
+bidmc27,2,RIAV,30,5.6701,226
+bidmc31,2,RIAV,30,1.0360,226
+bidmc38,2,RIAV,30,4.2462,226
+bidmc47,2,RIAV,30,7.5259,226
+bidmc51,2,RIAV,30,0.9095,226
+bidmc04,3,RIAV,30,4.3480,226
+bidmc06,3,RIAV,30,2.4891,226
+bidmc11,3,RIAV,30,4.9649,226
+bidmc20,3,RIAV,30,0.5976,226
+bidmc22,3,RIAV,30,5.5782,226
+bidmc24,3,RIAV,30,6.1658,226
+bidmc26,3,RIAV,30,3.5631,226
+bidmc28,3,RIAV,30,2.8668,226
+bidmc35,3,RIAV,30,4.0473,226
+bidmc44,3,RIAV,30,1.4178,226
+bidmc03,4,RIAV,30,1.9888,226
+bidmc05,4,RIAV,30,3.5981,226
+bidmc08,4,RIAV,30,3.3744,226
+bidmc12,4,RIAV,30,1.6943,226
+bidmc16,4,RIAV,30,1.8079,226
+bidmc34,4,RIAV,30,3.4823,226
+bidmc40,4,RIAV,30,5.3495,226
+bidmc43,4,RIAV,30,8.7816,226
+bidmc50,4,RIAV,30,3.0305,226
+bidmc53,4,RIAV,30,6.6278,226
+bidmc01,0,RIIV,30,7.0070,226
+bidmc02,0,RIIV,30,2.5371,226
+bidmc09,0,RIIV,30,3.2603,226
+bidmc14,0,RIIV,30,7.2388,226
+bidmc25,0,RIIV,30,1.5877,226
+bidmc32,0,RIIV,30,10.9906,226
+bidmc37,0,RIIV,30,3.0957,226
+bidmc41,0,RIIV,30,1.4667,226
+bidmc42,0,RIIV,30,0.4543,226
+bidmc46,0,RIIV,30,7.1738,226
+bidmc48,0,RIIV,30,2.1142,226
+bidmc10,1,RIIV,30,3.8674,226
+bidmc19,1,RIIV,30,3.4379,226
+bidmc23,1,RIIV,30,4.9875,226
+bidmc29,1,RIIV,30,3.5740,226
+bidmc30,1,RIIV,30,8.1137,226
+bidmc33,1,RIIV,30,6.3536,226
+bidmc36,1,RIIV,30,8.7359,226
+bidmc39,1,RIIV,30,1.5961,226
+bidmc45,1,RIIV,30,3.6120,226
+bidmc49,1,RIIV,30,3.0334,226
+bidmc52,1,RIIV,30,1.0840,226
+bidmc07,2,RIIV,30,1.9148,226
+bidmc13,2,RIIV,30,8.6874,65
+bidmc15,2,RIIV,30,2.1697,226
+bidmc17,2,RIIV,30,4.0881,226
+bidmc18,2,RIIV,30,2.7728,226
+bidmc21,2,RIIV,30,6.1988,226
+bidmc27,2,RIIV,30,0.8901,226
+bidmc31,2,RIIV,30,1.6036,226
+bidmc38,2,RIIV,30,5.3464,226
+bidmc47,2,RIIV,30,1.0551,226
+bidmc51,2,RIIV,30,1.6043,226
+bidmc04,3,RIIV,30,1.1619,226
+bidmc06,3,RIIV,30,0.3716,226
+bidmc11,3,RIIV,30,1.9480,226
+bidmc20,3,RIIV,30,0.6532,226
+bidmc22,3,RIIV,30,5.7522,226
+bidmc24,3,RIIV,30,3.4483,226
+bidmc26,3,RIIV,30,2.3679,226
+bidmc28,3,RIIV,30,1.4540,226
+bidmc35,3,RIIV,30,3.4228,226
+bidmc44,3,RIIV,30,1.8209,226
+bidmc03,4,RIIV,30,2.6259,226
+bidmc05,4,RIIV,30,3.8004,226
+bidmc08,4,RIIV,30,4.2707,226
+bidmc12,4,RIIV,30,1.4149,226
+bidmc16,4,RIIV,30,1.1469,226
+bidmc34,4,RIIV,30,3.1221,226
+bidmc40,4,RIIV,30,3.6543,226
+bidmc43,4,RIIV,30,7.6007,226
+bidmc50,4,RIIV,30,0.8150,226
+bidmc53,4,RIIV,30,4.7411,226
+bidmc01,0,RIFV,30,2.7749,226
+bidmc02,0,RIFV,30,12.6629,226
+bidmc09,0,RIFV,30,4.9577,226
+bidmc14,0,RIFV,30,7.6668,226
+bidmc25,0,RIFV,30,3.9255,226
+bidmc32,0,RIFV,30,8.0075,226
+bidmc37,0,RIFV,30,8.8404,226
+bidmc41,0,RIFV,30,6.8408,226
+bidmc42,0,RIFV,30,0.4508,226
+bidmc46,0,RIFV,30,8.3208,226
+bidmc48,0,RIFV,30,2.9335,226
+bidmc10,1,RIFV,30,8.9176,226
+bidmc19,1,RIFV,30,6.9793,226
+bidmc23,1,RIFV,30,7.0133,226
+bidmc29,1,RIFV,30,6.3905,226
+bidmc30,1,RIFV,30,10.8783,226
+bidmc33,1,RIFV,30,6.5141,226
+bidmc36,1,RIFV,30,4.2615,226
+bidmc39,1,RIFV,30,5.2819,226
+bidmc45,1,RIFV,30,9.1978,226
+bidmc49,1,RIFV,30,5.2973,226
+bidmc52,1,RIFV,30,3.4527,226
+bidmc07,2,RIFV,30,0.6978,226
+bidmc13,2,RIFV,30,9.9990,65
+bidmc15,2,RIFV,30,9.3183,226
+bidmc17,2,RIFV,30,7.1108,226
+bidmc18,2,RIFV,30,10.1535,226
+bidmc21,2,RIFV,30,10.3505,226
+bidmc27,2,RIFV,30,4.3796,226
+bidmc31,2,RIFV,30,4.7617,226
+bidmc38,2,RIFV,30,9.2329,226
+bidmc47,2,RIFV,30,7.5360,226
+bidmc51,2,RIFV,30,8.9727,226
+bidmc04,3,RIFV,30,6.8632,226
+bidmc06,3,RIFV,30,5.8510,226
+bidmc11,3,RIFV,30,4.9918,226
+bidmc20,3,RIFV,30,6.7117,226
+bidmc22,3,RIFV,30,9.9510,226
+bidmc24,3,RIFV,30,10.3882,226
+bidmc26,3,RIFV,30,4.8548,226
+bidmc28,3,RIFV,30,6.5463,226
+bidmc35,3,RIFV,30,4.8681,226
+bidmc44,3,RIFV,30,2.0848,226
+bidmc03,4,RIFV,30,5.6750,226
+bidmc05,4,RIFV,30,4.5362,226
+bidmc08,4,RIFV,30,1.6054,226
+bidmc12,4,RIFV,30,4.9293,226
+bidmc16,4,RIFV,30,6.4811,226
+bidmc34,4,RIFV,30,5.0452,226
+bidmc40,4,RIFV,30,7.7677,226
+bidmc43,4,RIFV,30,6.2995,226
+bidmc50,4,RIFV,30,7.3710,226
+bidmc53,4,RIFV,30,8.1295,226
+bidmc01,0,Fusion (Median),30,2.7684,226
+bidmc02,0,Fusion (Median),30,3.3062,226
+bidmc09,0,Fusion (Median),30,3.7725,226
+bidmc14,0,Fusion (Median),30,8.0010,226
+bidmc25,0,Fusion (Median),30,1.8415,226
+bidmc32,0,Fusion (Median),30,9.4637,226
+bidmc37,0,Fusion (Median),30,2.9833,226
+bidmc41,0,Fusion (Median),30,1.7616,226
+bidmc42,0,Fusion (Median),30,0.4356,226
+bidmc46,0,Fusion (Median),30,6.3910,226
+bidmc48,0,Fusion (Median),30,2.8495,226
+bidmc10,1,Fusion (Median),30,3.6947,226
+bidmc19,1,Fusion (Median),30,4.0519,226
+bidmc23,1,Fusion (Median),30,6.2661,226
+bidmc29,1,Fusion (Median),30,2.6856,226
+bidmc30,1,Fusion (Median),30,9.2146,226
+bidmc33,1,Fusion (Median),30,5.9692,226
+bidmc36,1,Fusion (Median),30,7.4651,226
+bidmc39,1,Fusion (Median),30,1.4771,226
+bidmc45,1,Fusion (Median),30,4.7029,226
+bidmc49,1,Fusion (Median),30,3.3073,226
+bidmc52,1,Fusion (Median),30,0.7887,226
+bidmc07,2,Fusion (Median),30,1.1331,226
+bidmc13,2,Fusion (Median),30,8.4741,65
+bidmc15,2,Fusion (Median),30,1.7314,226
+bidmc17,2,Fusion (Median),30,3.5079,226
+bidmc18,2,Fusion (Median),30,4.0545,226
+bidmc21,2,Fusion (Median),30,6.1649,226
+bidmc27,2,Fusion (Median),30,1.9339,226
+bidmc31,2,Fusion (Median),30,1.2353,226
+bidmc38,2,Fusion (Median),30,4.2960,226
+bidmc47,2,Fusion (Median),30,4.2554,226
+bidmc51,2,Fusion (Median),30,1.4019,226
+bidmc04,3,Fusion (Median),30,2.8454,226
+bidmc06,3,Fusion (Median),30,1.3613,226
+bidmc11,3,Fusion (Median),30,3.6415,226
+bidmc20,3,Fusion (Median),30,0.5983,226
+bidmc22,3,Fusion (Median),30,6.2223,226
+bidmc24,3,Fusion (Median),30,5.7716,226
+bidmc26,3,Fusion (Median),30,2.4796,226
+bidmc28,3,Fusion (Median),30,1.6846,226
+bidmc35,3,Fusion (Median),30,2.9686,226
+bidmc44,3,Fusion (Median),30,1.1880,226
+bidmc03,4,Fusion (Median),30,1.8771,226
+bidmc05,4,Fusion (Median),30,3.0638,226
+bidmc08,4,Fusion (Median),30,2.5886,226
+bidmc12,4,Fusion (Median),30,1.3653,226
+bidmc16,4,Fusion (Median),30,1.2454,226
+bidmc34,4,Fusion (Median),30,2.9888,226
+bidmc40,4,Fusion (Median),30,4.3762,226
+bidmc43,4,Fusion (Median),30,7.9461,226
+bidmc50,4,Fusion (Median),30,1.5181,226
+bidmc53,4,Fusion (Median),30,6.0556,226
+bidmc01,0,Retrained XGBoost,30,5.5487,226
+bidmc02,0,Retrained XGBoost,30,1.3868,226
+bidmc09,0,Retrained XGBoost,30,1.4106,226
+bidmc14,0,Retrained XGBoost,30,3.0539,226
+bidmc25,0,Retrained XGBoost,30,1.5804,226
+bidmc32,0,Retrained XGBoost,30,8.3426,226
+bidmc37,0,Retrained XGBoost,30,1.2958,226
+bidmc41,0,Retrained XGBoost,30,1.3069,226
+bidmc42,0,Retrained XGBoost,30,0.7441,226
+bidmc46,0,Retrained XGBoost,30,2.7482,226
+bidmc48,0,Retrained XGBoost,30,0.8034,226
+bidmc10,1,Retrained XGBoost,30,1.1068,226
+bidmc19,1,Retrained XGBoost,30,3.3172,226
+bidmc23,1,Retrained XGBoost,30,2.0059,226
+bidmc29,1,Retrained XGBoost,30,1.0355,226
+bidmc30,1,Retrained XGBoost,30,2.7852,226
+bidmc33,1,Retrained XGBoost,30,3.8240,226
+bidmc36,1,Retrained XGBoost,30,2.4648,226
+bidmc39,1,Retrained XGBoost,30,2.1175,226
+bidmc45,1,Retrained XGBoost,30,2.3596,226
+bidmc49,1,Retrained XGBoost,30,0.8503,226
+bidmc52,1,Retrained XGBoost,30,0.4418,226
+bidmc07,2,Retrained XGBoost,30,0.4764,226
+bidmc13,2,Retrained XGBoost,30,8.5211,65
+bidmc15,2,Retrained XGBoost,30,2.4245,226
+bidmc17,2,Retrained XGBoost,30,0.9110,226
+bidmc18,2,Retrained XGBoost,30,0.4446,226
+bidmc21,2,Retrained XGBoost,30,2.1788,226
+bidmc27,2,Retrained XGBoost,30,8.2197,226
+bidmc31,2,Retrained XGBoost,30,0.5331,226
+bidmc38,2,Retrained XGBoost,30,2.1495,226
+bidmc47,2,Retrained XGBoost,30,2.9204,226
+bidmc51,2,Retrained XGBoost,30,0.3509,226
+bidmc04,3,Retrained XGBoost,30,0.5572,226
+bidmc06,3,Retrained XGBoost,30,0.4553,226
+bidmc11,3,Retrained XGBoost,30,1.6160,226
+bidmc20,3,Retrained XGBoost,30,0.4333,226
+bidmc22,3,Retrained XGBoost,30,1.0682,226
+bidmc24,3,Retrained XGBoost,30,3.4685,226
+bidmc26,3,Retrained XGBoost,30,1.4044,226
+bidmc28,3,Retrained XGBoost,30,1.4735,226
+bidmc35,3,Retrained XGBoost,30,0.7566,226
+bidmc44,3,Retrained XGBoost,30,0.8824,226
+bidmc03,4,Retrained XGBoost,30,0.6309,226
+bidmc05,4,Retrained XGBoost,30,5.4965,226
+bidmc08,4,Retrained XGBoost,30,2.0797,226
+bidmc12,4,Retrained XGBoost,30,0.9942,226
+bidmc16,4,Retrained XGBoost,30,1.1886,226
+bidmc34,4,Retrained XGBoost,30,0.9495,226
+bidmc40,4,Retrained XGBoost,30,2.1005,226
+bidmc43,4,Retrained XGBoost,30,0.6688,226
+bidmc50,4,Retrained XGBoost,30,1.6593,226
+bidmc53,4,Retrained XGBoost,30,1.4272,226
+bidmc01,0,Train Mean,60,4.2884,211
+bidmc02,0,Train Mean,60,1.6169,211
+bidmc09,0,Train Mean,60,3.0645,211
+bidmc14,0,Train Mean,60,2.5654,211
+bidmc25,0,Train Mean,60,0.8943,211
+bidmc32,0,Train Mean,60,7.7340,211
+bidmc37,0,Train Mean,60,1.8110,211
+bidmc41,0,Train Mean,60,3.1067,211
+bidmc42,0,Train Mean,60,0.3587,211
+bidmc46,0,Train Mean,60,2.1162,211
+bidmc48,0,Train Mean,60,1.3039,211
+bidmc10,1,Train Mean,60,1.1840,211
+bidmc19,1,Train Mean,60,4.5140,211
+bidmc23,1,Train Mean,60,0.8972,211
+bidmc29,1,Train Mean,60,1.3227,211
+bidmc30,1,Train Mean,60,1.3995,211
+bidmc33,1,Train Mean,60,3.0958,211
+bidmc36,1,Train Mean,60,1.2529,211
+bidmc39,1,Train Mean,60,2.8534,211
+bidmc45,1,Train Mean,60,1.1985,211
+bidmc49,1,Train Mean,60,0.7606,211
+bidmc52,1,Train Mean,60,1.2283,211
+bidmc07,2,Train Mean,60,2.4314,211
+bidmc13,2,Train Mean,60,9.7921,54
+bidmc15,2,Train Mean,60,2.7650,211
+bidmc17,2,Train Mean,60,0.7444,211
+bidmc18,2,Train Mean,60,0.4853,211
+bidmc21,2,Train Mean,60,0.9529,211
+bidmc27,2,Train Mean,60,7.2171,211
+bidmc31,2,Train Mean,60,0.6215,211
+bidmc38,2,Train Mean,60,1.6396,211
+bidmc47,2,Train Mean,60,4.6644,211
+bidmc51,2,Train Mean,60,0.9259,211
+bidmc04,3,Train Mean,60,0.8986,211
+bidmc06,3,Train Mean,60,2.3047,211
+bidmc11,3,Train Mean,60,2.3936,211
+bidmc20,3,Train Mean,60,2.4381,211
+bidmc22,3,Train Mean,60,1.2110,211
+bidmc24,3,Train Mean,60,4.9350,211
+bidmc26,3,Train Mean,60,1.2586,211
+bidmc28,3,Train Mean,60,0.6107,211
+bidmc35,3,Train Mean,60,0.6934,211
+bidmc44,3,Train Mean,60,0.9383,211
+bidmc03,4,Train Mean,60,0.2601,211
+bidmc05,4,Train Mean,60,6.2391,211
+bidmc08,4,Train Mean,60,3.3731,211
+bidmc12,4,Train Mean,60,1.3932,211
+bidmc16,4,Train Mean,60,1.7586,211
+bidmc34,4,Train Mean,60,1.0004,211
+bidmc40,4,Train Mean,60,1.2393,211
+bidmc43,4,Train Mean,60,0.7011,211
+bidmc50,4,Train Mean,60,2.7512,211
+bidmc53,4,Train Mean,60,1.8953,211
+bidmc01,0,Train Median,60,3.9572,211
+bidmc02,0,Train Median,60,1.9480,211
+bidmc09,0,Train Median,60,2.7333,211
+bidmc14,0,Train Median,60,2.2943,211
+bidmc25,0,Train Median,60,1.1299,211
+bidmc32,0,Train Median,60,7.4028,211
+bidmc37,0,Train Median,60,1.4877,211
+bidmc41,0,Train Median,60,3.4379,211
+bidmc42,0,Train Median,60,0.2246,211
+bidmc46,0,Train Median,60,2.1185,211
+bidmc48,0,Train Median,60,1.0802,211
+bidmc10,1,Train Median,60,0.9935,211
+bidmc19,1,Train Median,60,4.7481,211
+bidmc23,1,Train Median,60,0.6986,211
+bidmc29,1,Train Median,60,1.1405,211
+bidmc30,1,Train Median,60,1.1653,211
+bidmc33,1,Train Median,60,2.9647,211
+bidmc36,1,Train Median,60,1.0187,211
+bidmc39,1,Train Median,60,3.0876,211
+bidmc45,1,Train Median,60,1.4326,211
+bidmc49,1,Train Median,60,0.8059,211
+bidmc52,1,Train Median,60,0.9942,211
+bidmc07,2,Train Median,60,2.6100,211
+bidmc13,2,Train Median,60,9.6134,54
+bidmc15,2,Train Median,60,2.5863,211
+bidmc17,2,Train Median,60,0.6825,211
+bidmc18,2,Train Median,60,0.6222,211
+bidmc21,2,Train Median,60,0.9799,211
+bidmc27,2,Train Median,60,7.0384,211
+bidmc31,2,Train Median,60,0.7783,211
+bidmc38,2,Train Median,60,1.5339,211
+bidmc47,2,Train Median,60,4.8431,211
+bidmc51,2,Train Median,60,1.1045,211
+bidmc04,3,Train Median,60,1.1299,211
+bidmc06,3,Train Median,60,2.0719,211
+bidmc11,3,Train Median,60,2.5684,211
+bidmc20,3,Train Median,60,2.6709,211
+bidmc22,3,Train Median,60,0.9782,211
+bidmc24,3,Train Median,60,4.7022,211
+bidmc26,3,Train Median,60,1.4340,211
+bidmc28,3,Train Median,60,0.4733,211
+bidmc35,3,Train Median,60,0.8855,211
+bidmc44,3,Train Median,60,1.1711,211
+bidmc03,4,Train Median,60,0.3184,211
+bidmc05,4,Train Median,60,6.0741,211
+bidmc08,4,Train Median,60,3.5382,211
+bidmc12,4,Train Median,60,1.5115,211
+bidmc16,4,Train Median,60,1.9236,211
+bidmc34,4,Train Median,60,0.9883,211
+bidmc40,4,Train Median,60,1.1561,211
+bidmc43,4,Train Median,60,0.6175,211
+bidmc50,4,Train Median,60,2.5861,211
+bidmc53,4,Train Median,60,2.0604,211
+bidmc01,0,Classical Spectral,60,1.8887,211
+bidmc02,0,Classical Spectral,60,1.0089,211
+bidmc09,0,Classical Spectral,60,0.6662,211
+bidmc14,0,Classical Spectral,60,6.8660,211
+bidmc25,0,Classical Spectral,60,1.1932,211
+bidmc32,0,Classical Spectral,60,3.2301,211
+bidmc37,0,Classical Spectral,60,2.2967,211
+bidmc41,0,Classical Spectral,60,2.7798,211
+bidmc42,0,Classical Spectral,60,0.7444,211
+bidmc46,0,Classical Spectral,60,6.4250,211
+bidmc48,0,Classical Spectral,60,2.7648,211
+bidmc10,1,Classical Spectral,60,2.4287,211
+bidmc19,1,Classical Spectral,60,3.4507,211
+bidmc23,1,Classical Spectral,60,3.9433,211
+bidmc29,1,Classical Spectral,60,2.2210,211
+bidmc30,1,Classical Spectral,60,6.2290,211
+bidmc33,1,Classical Spectral,60,6.3013,211
+bidmc36,1,Classical Spectral,60,8.6531,211
+bidmc39,1,Classical Spectral,60,0.9299,211
+bidmc45,1,Classical Spectral,60,1.9701,211
+bidmc49,1,Classical Spectral,60,1.9391,211
+bidmc52,1,Classical Spectral,60,0.7151,211
+bidmc07,2,Classical Spectral,60,0.4481,211
+bidmc13,2,Classical Spectral,60,7.3531,54
+bidmc15,2,Classical Spectral,60,1.6888,211
+bidmc17,2,Classical Spectral,60,4.1561,211
+bidmc18,2,Classical Spectral,60,0.5900,211
+bidmc21,2,Classical Spectral,60,5.4445,211
+bidmc27,2,Classical Spectral,60,0.8875,211
+bidmc31,2,Classical Spectral,60,0.9898,211
+bidmc38,2,Classical Spectral,60,4.2917,211
+bidmc47,2,Classical Spectral,60,1.5120,211
+bidmc51,2,Classical Spectral,60,0.8084,211
+bidmc04,3,Classical Spectral,60,1.4568,211
+bidmc06,3,Classical Spectral,60,0.5140,211
+bidmc11,3,Classical Spectral,60,1.7737,211
+bidmc20,3,Classical Spectral,60,0.6239,211
+bidmc22,3,Classical Spectral,60,1.3484,211
+bidmc24,3,Classical Spectral,60,0.6980,211
+bidmc26,3,Classical Spectral,60,3.3701,211
+bidmc28,3,Classical Spectral,60,1.3528,211
+bidmc35,3,Classical Spectral,60,2.7898,211
+bidmc44,3,Classical Spectral,60,1.1065,211
+bidmc03,4,Classical Spectral,60,2.3179,211
+bidmc05,4,Classical Spectral,60,3.0881,211
+bidmc08,4,Classical Spectral,60,3.5045,211
+bidmc12,4,Classical Spectral,60,0.4723,211
+bidmc16,4,Classical Spectral,60,1.2517,211
+bidmc34,4,Classical Spectral,60,2.2540,211
+bidmc40,4,Classical Spectral,60,3.6173,211
+bidmc43,4,Classical Spectral,60,6.9075,211
+bidmc50,4,Classical Spectral,60,1.0565,211
+bidmc53,4,Classical Spectral,60,2.8000,211
+bidmc01,0,RIAV,60,3.1047,211
+bidmc02,0,RIAV,60,3.7999,211
+bidmc09,0,RIAV,60,6.1371,211
+bidmc14,0,RIAV,60,10.0645,211
+bidmc25,0,RIAV,60,4.1101,211
+bidmc32,0,RIAV,60,11.1055,211
+bidmc37,0,RIAV,60,1.7610,211
+bidmc41,0,RIAV,60,1.4329,211
+bidmc42,0,RIAV,60,6.0490,211
+bidmc46,0,RIAV,60,5.8281,211
+bidmc48,0,RIAV,60,8.1752,211
+bidmc10,1,RIAV,60,2.7404,211
+bidmc19,1,RIAV,60,5.4578,211
+bidmc23,1,RIAV,60,5.9850,211
+bidmc29,1,RIAV,60,3.6290,211
+bidmc30,1,RIAV,60,8.2406,211
+bidmc33,1,RIAV,60,8.1349,211
+bidmc36,1,RIAV,60,9.2795,211
+bidmc39,1,RIAV,60,1.1937,211
+bidmc45,1,RIAV,60,2.2164,211
+bidmc49,1,RIAV,60,3.1135,211
+bidmc52,1,RIAV,60,0.4553,211
+bidmc07,2,RIAV,60,0.2121,211
+bidmc13,2,RIAV,60,8.7780,54
+bidmc15,2,RIAV,60,1.4265,211
+bidmc17,2,RIAV,60,2.6460,211
+bidmc18,2,RIAV,60,2.6423,211
+bidmc21,2,RIAV,60,8.2987,211
+bidmc27,2,RIAV,60,4.6205,211
+bidmc31,2,RIAV,60,0.8444,211
+bidmc38,2,RIAV,60,2.9246,211
+bidmc47,2,RIAV,60,7.3974,211
+bidmc51,2,RIAV,60,0.3150,211
+bidmc04,3,RIAV,60,3.4208,211
+bidmc06,3,RIAV,60,1.4208,211
+bidmc11,3,RIAV,60,3.2064,211
+bidmc20,3,RIAV,60,0.3300,211
+bidmc22,3,RIAV,60,3.6033,211
+bidmc24,3,RIAV,60,5.9197,211
+bidmc26,3,RIAV,60,3.1615,211
+bidmc28,3,RIAV,60,2.1189,211
+bidmc35,3,RIAV,60,4.0679,211
+bidmc44,3,RIAV,60,1.4881,211
+bidmc03,4,RIAV,60,1.3203,211
+bidmc05,4,RIAV,60,3.9826,211
+bidmc08,4,RIAV,60,2.8771,211
+bidmc12,4,RIAV,60,1.0526,211
+bidmc16,4,RIAV,60,1.4993,211
+bidmc34,4,RIAV,60,1.8962,211
+bidmc40,4,RIAV,60,5.1277,211
+bidmc43,4,RIAV,60,8.9237,211
+bidmc50,4,RIAV,60,1.2947,211
+bidmc53,4,RIAV,60,6.2618,211
+bidmc01,0,RIIV,60,7.4626,211
+bidmc02,0,RIIV,60,1.3673,211
+bidmc09,0,RIIV,60,2.3815,211
+bidmc14,0,RIIV,60,7.0558,211
+bidmc25,0,RIIV,60,0.7419,211
+bidmc32,0,RIIV,60,11.4269,211
+bidmc37,0,RIIV,60,2.7134,211
+bidmc41,0,RIIV,60,0.8675,211
+bidmc42,0,RIIV,60,0.2772,211
+bidmc46,0,RIIV,60,7.0731,211
+bidmc48,0,RIIV,60,1.7270,211
+bidmc10,1,RIIV,60,3.4473,211
+bidmc19,1,RIIV,60,2.9432,211
+bidmc23,1,RIIV,60,4.9473,211
+bidmc29,1,RIIV,60,3.8632,211
+bidmc30,1,RIIV,60,7.8684,211
+bidmc33,1,RIIV,60,6.9097,211
+bidmc36,1,RIIV,60,9.7780,211
+bidmc39,1,RIIV,60,0.9511,211
+bidmc45,1,RIIV,60,2.3748,211
+bidmc49,1,RIIV,60,2.4942,211
+bidmc52,1,RIIV,60,0.5813,211
+bidmc07,2,RIIV,60,0.4882,211
+bidmc13,2,RIIV,60,8.1020,54
+bidmc15,2,RIIV,60,1.6135,211
+bidmc17,2,RIIV,60,2.5334,211
+bidmc18,2,RIIV,60,0.5507,211
+bidmc21,2,RIIV,60,6.1964,211
+bidmc27,2,RIIV,60,0.7073,211
+bidmc31,2,RIIV,60,1.0921,211
+bidmc38,2,RIIV,60,4.2511,211
+bidmc47,2,RIIV,60,1.4082,211
+bidmc51,2,RIIV,60,0.8657,211
+bidmc04,3,RIIV,60,1.1635,211
+bidmc06,3,RIIV,60,0.2299,211
+bidmc11,3,RIIV,60,1.5819,211
+bidmc20,3,RIIV,60,0.4685,211
+bidmc22,3,RIIV,60,5.0835,211
+bidmc24,3,RIIV,60,1.0463,211
+bidmc26,3,RIIV,60,2.4560,211
+bidmc28,3,RIIV,60,0.6399,211
+bidmc35,3,RIIV,60,3.8959,211
+bidmc44,3,RIIV,60,1.7373,211
+bidmc03,4,RIIV,60,1.4020,211
+bidmc05,4,RIIV,60,4.1963,211
+bidmc08,4,RIIV,60,2.6006,211
+bidmc12,4,RIIV,60,1.3889,211
+bidmc16,4,RIIV,60,1.1361,211
+bidmc34,4,RIIV,60,2.3044,211
+bidmc40,4,RIIV,60,3.3151,211
+bidmc43,4,RIIV,60,7.3029,211
+bidmc50,4,RIIV,60,0.4790,211
+bidmc53,4,RIIV,60,2.4998,211
+bidmc01,0,RIFV,60,3.6305,211
+bidmc02,0,RIFV,60,12.8188,211
+bidmc09,0,RIFV,60,3.4129,211
+bidmc14,0,RIFV,60,7.6360,211
+bidmc25,0,RIFV,60,2.7423,211
+bidmc32,0,RIFV,60,8.5274,211
+bidmc37,0,RIFV,60,7.5741,211
+bidmc41,0,RIFV,60,5.2496,211
+bidmc42,0,RIFV,60,0.2455,211
+bidmc46,0,RIFV,60,7.4252,211
+bidmc48,0,RIFV,60,2.0553,211
+bidmc10,1,RIFV,60,7.5616,211
+bidmc19,1,RIFV,60,4.5665,211
+bidmc23,1,RIFV,60,5.4880,211
+bidmc29,1,RIFV,60,4.9835,211
+bidmc30,1,RIFV,60,10.9064,211
+bidmc33,1,RIFV,60,6.8759,211
+bidmc36,1,RIFV,60,2.9517,211
+bidmc39,1,RIFV,60,6.3592,211
+bidmc45,1,RIFV,60,8.5862,211
+bidmc49,1,RIFV,60,4.6691,211
+bidmc52,1,RIFV,60,1.4902,211
+bidmc07,2,RIFV,60,0.2116,211
+bidmc13,2,RIFV,60,8.9030,54
+bidmc15,2,RIFV,60,9.1096,211
+bidmc17,2,RIFV,60,5.5795,211
+bidmc18,2,RIFV,60,9.4505,211
+bidmc21,2,RIFV,60,9.6591,211
+bidmc27,2,RIFV,60,3.7910,211
+bidmc31,2,RIFV,60,3.6960,211
+bidmc38,2,RIFV,60,8.6238,211
+bidmc47,2,RIFV,60,9.4329,211
+bidmc51,2,RIFV,60,7.5283,211
+bidmc04,3,RIFV,60,5.8197,211
+bidmc06,3,RIFV,60,4.4870,211
+bidmc11,3,RIFV,60,4.9354,211
+bidmc20,3,RIFV,60,6.2359,211
+bidmc22,3,RIFV,60,9.0341,211
+bidmc24,3,RIFV,60,10.6682,211
+bidmc26,3,RIFV,60,4.4909,211
+bidmc28,3,RIFV,60,6.0736,211
+bidmc35,3,RIFV,60,3.6741,211
+bidmc44,3,RIFV,60,1.9502,211
+bidmc03,4,RIFV,60,4.7118,211
+bidmc05,4,RIFV,60,3.8854,211
+bidmc08,4,RIFV,60,1.0356,211
+bidmc12,4,RIFV,60,4.4761,211
+bidmc16,4,RIFV,60,5.6324,211
+bidmc34,4,RIFV,60,4.3033,211
+bidmc40,4,RIFV,60,6.6600,211
+bidmc43,4,RIFV,60,6.1608,211
+bidmc50,4,RIFV,60,6.9361,211
+bidmc53,4,RIFV,60,7.8088,211
+bidmc01,0,Fusion (Median),60,3.4076,211
+bidmc02,0,Fusion (Median),60,2.0655,211
+bidmc09,0,Fusion (Median),60,1.7828,211
+bidmc14,0,Fusion (Median),60,8.0200,211
+bidmc25,0,Fusion (Median),60,1.0666,211
+bidmc32,0,Fusion (Median),60,9.9249,211
+bidmc37,0,Fusion (Median),60,2.4505,211
+bidmc41,0,Fusion (Median),60,1.2666,211
+bidmc42,0,Fusion (Median),60,0.2551,211
+bidmc46,0,Fusion (Median),60,5.2570,211
+bidmc48,0,Fusion (Median),60,2.2997,211
+bidmc10,1,Fusion (Median),60,2.8138,211
+bidmc19,1,Fusion (Median),60,2.7437,211
+bidmc23,1,Fusion (Median),60,5.5338,211
+bidmc29,1,Fusion (Median),60,2.7039,211
+bidmc30,1,Fusion (Median),60,9.5244,211
+bidmc33,1,Fusion (Median),60,6.6791,211
+bidmc36,1,Fusion (Median),60,8.6986,211
+bidmc39,1,Fusion (Median),60,0.8402,211
+bidmc45,1,Fusion (Median),60,3.0034,211
+bidmc49,1,Fusion (Median),60,2.8140,211
+bidmc52,1,Fusion (Median),60,0.3546,211
+bidmc07,2,Fusion (Median),60,0.2039,211
+bidmc13,2,Fusion (Median),60,8.1972,54
+bidmc15,2,Fusion (Median),60,1.4158,211
+bidmc17,2,Fusion (Median),60,2.0248,211
+bidmc18,2,Fusion (Median),60,2.2645,211
+bidmc21,2,Fusion (Median),60,6.4122,211
+bidmc27,2,Fusion (Median),60,1.4333,211
+bidmc31,2,Fusion (Median),60,0.7050,211
+bidmc38,2,Fusion (Median),60,2.6173,211
+bidmc47,2,Fusion (Median),60,5.1115,211
+bidmc51,2,Fusion (Median),60,0.3702,211
+bidmc04,3,Fusion (Median),60,2.6229,211
+bidmc06,3,Fusion (Median),60,0.8023,211
+bidmc11,3,Fusion (Median),60,2.1595,211
+bidmc20,3,Fusion (Median),60,0.3294,211
+bidmc22,3,Fusion (Median),60,4.8438,211
+bidmc24,3,Fusion (Median),60,5.1646,211
+bidmc26,3,Fusion (Median),60,2.3928,211
+bidmc28,3,Fusion (Median),60,1.3800,211
+bidmc35,3,Fusion (Median),60,3.9180,211
+bidmc44,3,Fusion (Median),60,1.2949,211
+bidmc03,4,Fusion (Median),60,1.4229,211
+bidmc05,4,Fusion (Median),60,3.1686,211
+bidmc08,4,Fusion (Median),60,1.7738,211
+bidmc12,4,Fusion (Median),60,1.1852,211
+bidmc16,4,Fusion (Median),60,1.1919,211
+bidmc34,4,Fusion (Median),60,1.8987,211
+bidmc40,4,Fusion (Median),60,4.3575,211
+bidmc43,4,Fusion (Median),60,7.8472,211
+bidmc50,4,Fusion (Median),60,0.8591,211
+bidmc53,4,Fusion (Median),60,5.5547,211
+bidmc01,0,Retrained XGBoost,60,4.7215,211
+bidmc02,0,Retrained XGBoost,60,1.0511,211
+bidmc09,0,Retrained XGBoost,60,1.2971,211
+bidmc14,0,Retrained XGBoost,60,2.5696,211
+bidmc25,0,Retrained XGBoost,60,1.3299,211
+bidmc32,0,Retrained XGBoost,60,7.4340,211
+bidmc37,0,Retrained XGBoost,60,1.2219,211
+bidmc41,0,Retrained XGBoost,60,1.6902,211
+bidmc42,0,Retrained XGBoost,60,0.4155,211
+bidmc46,0,Retrained XGBoost,60,2.3855,211
+bidmc48,0,Retrained XGBoost,60,0.6477,211
+bidmc10,1,Retrained XGBoost,60,1.0043,211
+bidmc19,1,Retrained XGBoost,60,3.4856,211
+bidmc23,1,Retrained XGBoost,60,1.7345,211
+bidmc29,1,Retrained XGBoost,60,0.9015,211
+bidmc30,1,Retrained XGBoost,60,2.3297,211
+bidmc33,1,Retrained XGBoost,60,3.3555,211
+bidmc36,1,Retrained XGBoost,60,2.7214,211
+bidmc39,1,Retrained XGBoost,60,1.9762,211
+bidmc45,1,Retrained XGBoost,60,2.0930,211
+bidmc49,1,Retrained XGBoost,60,0.6861,211
+bidmc52,1,Retrained XGBoost,60,0.2831,211
+bidmc07,2,Retrained XGBoost,60,0.4076,211
+bidmc13,2,Retrained XGBoost,60,11.1875,54
+bidmc15,2,Retrained XGBoost,60,2.6323,211
+bidmc17,2,Retrained XGBoost,60,0.4804,211
+bidmc18,2,Retrained XGBoost,60,0.3879,211
+bidmc21,2,Retrained XGBoost,60,1.7414,211
+bidmc27,2,Retrained XGBoost,60,8.4904,211
+bidmc31,2,Retrained XGBoost,60,0.5324,211
+bidmc38,2,Retrained XGBoost,60,1.6187,211
+bidmc47,2,Retrained XGBoost,60,2.9923,211
+bidmc51,2,Retrained XGBoost,60,0.5744,211
+bidmc04,3,Retrained XGBoost,60,0.4579,211
+bidmc06,3,Retrained XGBoost,60,0.3603,211
+bidmc11,3,Retrained XGBoost,60,1.6620,211
+bidmc20,3,Retrained XGBoost,60,0.3621,211
+bidmc22,3,Retrained XGBoost,60,1.6318,211
+bidmc24,3,Retrained XGBoost,60,2.7056,211
+bidmc26,3,Retrained XGBoost,60,1.0933,211
+bidmc28,3,Retrained XGBoost,60,1.3081,211
+bidmc35,3,Retrained XGBoost,60,0.6348,211
+bidmc44,3,Retrained XGBoost,60,0.9045,211
+bidmc03,4,Retrained XGBoost,60,0.3404,211
+bidmc05,4,Retrained XGBoost,60,5.6845,211
+bidmc08,4,Retrained XGBoost,60,1.4649,211
+bidmc12,4,Retrained XGBoost,60,0.8671,211
+bidmc16,4,Retrained XGBoost,60,1.3136,211
+bidmc34,4,Retrained XGBoost,60,0.9543,211
+bidmc40,4,Retrained XGBoost,60,1.6036,211
+bidmc43,4,Retrained XGBoost,60,0.6629,211
+bidmc50,4,Retrained XGBoost,60,1.8551,211
+bidmc53,4,Retrained XGBoost,60,1.1868,211
+bidmc01,0,XGBoost (Val-Chosen Window),val-selected,4.7215,211
+bidmc02,0,XGBoost (Val-Chosen Window),val-selected,1.0511,211
+bidmc09,0,XGBoost (Val-Chosen Window),val-selected,1.2971,211
+bidmc14,0,XGBoost (Val-Chosen Window),val-selected,2.5696,211
+bidmc25,0,XGBoost (Val-Chosen Window),val-selected,1.3299,211
+bidmc32,0,XGBoost (Val-Chosen Window),val-selected,7.4340,211
+bidmc37,0,XGBoost (Val-Chosen Window),val-selected,1.2219,211
+bidmc41,0,XGBoost (Val-Chosen Window),val-selected,1.6902,211
+bidmc42,0,XGBoost (Val-Chosen Window),val-selected,0.4155,211
+bidmc46,0,XGBoost (Val-Chosen Window),val-selected,2.3855,211
+bidmc48,0,XGBoost (Val-Chosen Window),val-selected,0.6477,211
+bidmc10,1,XGBoost (Val-Chosen Window),val-selected,1.0043,211
+bidmc19,1,XGBoost (Val-Chosen Window),val-selected,3.4856,211
+bidmc23,1,XGBoost (Val-Chosen Window),val-selected,1.7345,211
+bidmc29,1,XGBoost (Val-Chosen Window),val-selected,0.9015,211
+bidmc30,1,XGBoost (Val-Chosen Window),val-selected,2.3297,211
+bidmc33,1,XGBoost (Val-Chosen Window),val-selected,3.3555,211
+bidmc36,1,XGBoost (Val-Chosen Window),val-selected,2.7214,211
+bidmc39,1,XGBoost (Val-Chosen Window),val-selected,1.9762,211
+bidmc45,1,XGBoost (Val-Chosen Window),val-selected,2.0930,211
+bidmc49,1,XGBoost (Val-Chosen Window),val-selected,0.6861,211
+bidmc52,1,XGBoost (Val-Chosen Window),val-selected,0.2831,211
+bidmc07,2,XGBoost (Val-Chosen Window),val-selected,0.4076,211
+bidmc13,2,XGBoost (Val-Chosen Window),val-selected,11.1875,54
+bidmc15,2,XGBoost (Val-Chosen Window),val-selected,2.6323,211
+bidmc17,2,XGBoost (Val-Chosen Window),val-selected,0.4804,211
+bidmc18,2,XGBoost (Val-Chosen Window),val-selected,0.3879,211
+bidmc21,2,XGBoost (Val-Chosen Window),val-selected,1.7414,211
+bidmc27,2,XGBoost (Val-Chosen Window),val-selected,8.4904,211
+bidmc31,2,XGBoost (Val-Chosen Window),val-selected,0.5324,211
+bidmc38,2,XGBoost (Val-Chosen Window),val-selected,1.6187,211
+bidmc47,2,XGBoost (Val-Chosen Window),val-selected,2.9923,211
+bidmc51,2,XGBoost (Val-Chosen Window),val-selected,0.5744,211
+bidmc04,3,XGBoost (Val-Chosen Window),val-selected,0.4579,211
+bidmc06,3,XGBoost (Val-Chosen Window),val-selected,0.3603,211
+bidmc11,3,XGBoost (Val-Chosen Window),val-selected,1.6620,211
+bidmc20,3,XGBoost (Val-Chosen Window),val-selected,0.3621,211
+bidmc22,3,XGBoost (Val-Chosen Window),val-selected,1.6318,211
+bidmc24,3,XGBoost (Val-Chosen Window),val-selected,2.7056,211
+bidmc26,3,XGBoost (Val-Chosen Window),val-selected,1.0933,211
+bidmc28,3,XGBoost (Val-Chosen Window),val-selected,1.3081,211
+bidmc35,3,XGBoost (Val-Chosen Window),val-selected,0.6348,211
+bidmc44,3,XGBoost (Val-Chosen Window),val-selected,0.9045,211
+bidmc03,4,XGBoost (Val-Chosen Window),val-selected,0.3404,211
+bidmc05,4,XGBoost (Val-Chosen Window),val-selected,5.6845,211
+bidmc08,4,XGBoost (Val-Chosen Window),val-selected,1.4649,211
+bidmc12,4,XGBoost (Val-Chosen Window),val-selected,0.8671,211
+bidmc16,4,XGBoost (Val-Chosen Window),val-selected,1.3136,211
+bidmc34,4,XGBoost (Val-Chosen Window),val-selected,0.9543,211
+bidmc40,4,XGBoost (Val-Chosen Window),val-selected,1.6036,211
+bidmc43,4,XGBoost (Val-Chosen Window),val-selected,0.6629,211
+bidmc50,4,XGBoost (Val-Chosen Window),val-selected,1.8551,211
+bidmc53,4,XGBoost (Val-Chosen Window),val-selected,1.1868,211

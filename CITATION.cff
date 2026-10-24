@@ -1,0 +1,99 @@
+cff-version: 1.2.0
+message: "If you use this software, code, or methodology in your research, please cite it as below."
+title: "Artifact-Resilient Cardiorespiratory Triage using PPG and Conformal Prediction"
+authors:
+  - family-names: "BDA Project Contributors"
+    given-names: ""
+abstract: >-
+  An end-to-end Python pipeline for continuous respiratory rate estimation
+  from photoplethysmography (PPG) biosignals using XGBoost and split conformal
+  prediction. Evaluated under strict patient-disjoint 5-fold cross-validation on
+  the 53-patient PhysioNet BIDMC ICU cohort, targeting CPU-only hardware
+  execution with adaptive uncertainty quantification and safe clinical abstention.
+version: 1.0.0
+date-released: "2026-10-17"
+license: MIT
+repository-code: "https://github.com/placeholder/bda-cardiorespiratory-conformal-triage"
+keywords:
+  - photoplethysmography
+  - respiratory-rate-estimation
+  - conformal-prediction
+  - uncertainty-quantification
+  - selective-classification
+  - clinical-decision-support
+  - biosignal-processing
+  - physionet-bidmc
+references:
+  - type: article
+    title: "Towards a Robust Estimation of Respiratory Rate from Pulse Oximeters"
+    authors:
+      - family-names: "Pimentel"
+        given-names: "Marco A. F."
+      - family-names: "Johnson"
+        given-names: "Alistair E. W."
+      - family-names: "Charlton"
+        given-names: "Peter H."
+      - family-names: "Birrenkott"
+        given-names: "David"
+      - family-names: "Watkinson"
+        given-names: "Peter J."
+      - family-names: "Tarassenko"
+        given-names: "Lionel"
+      - family-names: "Clifton"
+        given-names: "David A."
+    journal: "IEEE Transactions on Biomedical Engineering"
+    volume: 64
+    issue: 8
+    start: 1914
+    end: 1923
+    year: 2016
+    doi: "10.1109/TBME.2016.2613124"
+  - type: article
+    title: "PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals"
+    authors:
+      - family-names: "Goldberger"
+        given-names: "Ary L."
+      - family-names: "Amaral"
+        given-names: "Luis A. N."
+      - family-names: "Glass"
+        given-names: "Leon"
+      - family-names: "Hausdorff"
+        given-names: "Jeffrey M."
+      - family-names: "Ivanov"
+        given-names: "Plamen Ch."
+      - family-names: "Mark"
+        given-names: "Roger G."
+      - family-names: "Mietus"
+        given-names: "Joseph E."
+      - family-names: "Moody"
+        given-names: "George B."
+      - family-names: "Peng"
+        given-names: "Chung-Kang"
+      - family-names: "Stanley"
+        given-names: "H. Eugene"
+    journal: "Circulation"
+    volume: 101
+    issue: 23
+    start: "e215"
+    end: "e220"
+    year: 2000
+    doi: "10.1161/01.CIR.101.23.e215"
+  - type: article
+    title: "Multiparameter respiratory rate estimation from the photoplethysmogram"
+    authors:
+      - family-names: "Karlen"
+        given-names: "Walter"
+      - family-names: "Raman"
+        given-names: "Sanjeev"
+      - family-names: "Ansermino"
+        given-names: "J. Mark"
+      - family-names: "Dumont"
+        given-names: "Guy A."
+    journal: "IEEE Transactions on Biomedical Engineering"
+    volume: 60
+    issue: 7
+    start: 1946
+    end: 1953
+    year: 2013
+    doi: "10.1109/TBME.2013.2246160"
+

@@ -1,0 +1,44 @@
+MIT License
+
+Copyright (c) 2026 BDA Project Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+DATASET USAGE & GOVERNANCE NOTICE
+================================================================================
+This license covers the code only. The MIT License applies strictly to the source
+code, analysis scripts, pipelines, and documentation original to this repository.
+
+The BIDMC data itself remains governed by PhysioNet's own terms and isn't relicensed
+by this repository. The PhysioNet BIDMC Respiratory Rate Dataset used by this
+project remains the intellectual property of its original creators and is governed
+separately by PhysioNet's Open Data / Health Data Use Agreements and the Open Data
+Commons Attribution License (ODC-By v1.0).
+
+
+Users of this repository who download, preprocess, or analyze the BIDMC dataset
+are required to adhere to PhysioNet's terms of use and cite the original data
+publications:
+  - Pimentel, M.A.F. et al., "Towards a Robust Estimation of Respiratory Rate
+    from Pulse Oximeters," IEEE Transactions on Biomedical Engineering, 64(8),
+    pp. 1914–1923, 2016. DOI: 10.1109/TBME.2016.2613124
+  - Goldberger, A.L. et al., "PhysioBank, PhysioToolkit, and PhysioNet:
+    Components of a New Research Resource for Complex Physiologic Signals,"
+    Circulation, 101(23), pp. e215–e220, 2000. DOI: 10.1161/01.CIR.101.23.e215

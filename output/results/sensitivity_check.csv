@@ -1,0 +1,6 @@
+config,category,max_depth,learning_rate,mean_test_mae,std_test_mae,delta_vs_default,fold_0_mae,fold_1_mae,fold_2_mae,fold_3_mae,fold_4_mae
+"Default (max_depth=3, lr=0.08)",Baseline Default,3,0.08,1.8427,0.5199,0.0,2.3274,2.3085,2.1366,1.081,1.3599
+Shallow Trees (max_depth=2),max_depth variation,2,0.08,1.823,0.5026,-0.0197,2.2177,2.3746,2.0546,1.0669,1.4013
+Deeper Trees (max_depth=4),max_depth variation,4,0.08,1.9416,0.5606,0.0989,2.3558,2.5777,2.2321,1.1922,1.3504
+Lower Learning Rate (lr=0.05),learning_rate variation,3,0.05,1.8109,0.5001,-0.0318,2.2546,2.2004,2.1869,1.0847,1.3281
+Higher Learning Rate (lr=0.12),learning_rate variation,3,0.12,1.9251,0.5457,0.0825,2.3627,2.4532,2.2744,1.1411,1.3942

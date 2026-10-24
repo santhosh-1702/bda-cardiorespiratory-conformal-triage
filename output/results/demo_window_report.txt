@@ -1,0 +1,26 @@
+================================================================================
+SINGLE-WINDOW CLINICAL DEMONSTRATION REPORT (N=1 DEMO WINDOW)
+================================================================================
+
+Model: XGBoost (hist, CPU)
+Clean Test MAE (Cohort 5-Fold CV): 1.7928 bpm
+
+--- 1. Clean PPG Demonstration Window ---
+Clean Predicted RR:          21.88 bpm
+Clean 90% Prediction Band:   [20.11, 23.66] bpm (Width: 3.55 bpm)
+Ground Truth RR:             23.23 bpm
+Clean Window Covered (N=1):  True (Ground truth within interval)
+Clean Abstention (N=1):      False (Prediction accepted)
+
+--- 2. Motion-Corrupted PPG Demonstration Window (Moderate Artifact) ---
+Noisy Predicted RR:          21.83 bpm
+Noisy 90% Prediction Band:   [20.77, 22.88] bpm (Width: 2.11 bpm)
+Ground Truth RR:             23.23 bpm
+Noisy Window Covered (N=1):  False (Miscoverage)
+Noisy Abstention (N=1):      False (Prediction accepted / Resilient)
+
+--- 3. Cohort Reference Metrics (5-Fold Cross-Validation, 53 Patients) ---
+Clean Cohort Empirical Coverage: 75.69%
+Clean Cohort Retained MAE:       0.7897 bpm
+
+================================================================================

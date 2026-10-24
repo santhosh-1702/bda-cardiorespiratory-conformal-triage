@@ -1,0 +1,80 @@
+# ==============================================================================
+# Git Ignore Configuration: Cardiorespiratory Conformal Triage Pipeline
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Raw Physiological Datasets (Terms of Use Prohibit Redistribution)
+# ------------------------------------------------------------------------------
+# PhysioNet BIDMC raw patient data
+bidmc_data/
+bidmc_data/*
+
+# CapnoBase IEEE TBME Benchmark raw data (Borealis Dataverse)
+# CapnoBase terms of use prohibit redistribution. Data must be obtained directly
+# from Borealis Dataverse (https://doi.org/10.5683/SP2/NLB8IT) by each user.
+capnobase_data/
+capnobase_data/*
+data/capnobase/
+data/capnobase/*
+data/raw/
+data/raw/*
+*DATASET/
+*DATASET/*
+
+# Raw binary formats
+*.mat
+*.dat
+*.hea
+
+# ------------------------------------------------------------------------------
+# 2. Python Environment & Bytecode Caches
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ------------------------------------------------------------------------------
+# 3. Editor & OS Metadata
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini

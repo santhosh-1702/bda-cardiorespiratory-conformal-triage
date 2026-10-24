@@ -1,0 +1,7 @@
+Experiment,Severity,Condition,MAE_bpm,Coverage,Mean_Width_bpm,Abstention_Rate,AUROC_Detection,SQI_AUROC,SQI_Abstention_Rate
+Raw_Signal_Artifact,mild,Clean,1.7801,0.8635,11.0335,0.1575,N/A,N/A,0.1347
+Raw_Signal_Artifact,mild,Corrupted,1.9933,0.9013,12.9330,0.2760,0.6278,0.8979,0.6873
+Raw_Signal_Artifact,moderate,Clean,1.7801,0.8635,11.0335,0.1575,N/A,N/A,0.1347
+Raw_Signal_Artifact,moderate,Corrupted,2.3369,0.8871,12.9930,0.3660,0.6662,0.9922,0.9991
+Raw_Signal_Artifact,severe,Clean,1.7801,0.8635,11.0335,0.1575,N/A,N/A,0.1347
+Raw_Signal_Artifact,severe,Corrupted,2.3900,0.9118,14.3674,0.4695,0.7289,0.9998,1.0000

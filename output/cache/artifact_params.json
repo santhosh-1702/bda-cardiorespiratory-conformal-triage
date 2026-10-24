@@ -1,0 +1,47 @@
+{
+  "mild": {
+    "description": "Mild clinical disturbance: minor sensor movement, low muscle tremor",
+    "hf_snr_db": 20.0,
+    "baseline_drift_scale": 0.35,
+    "motion_burst_scale": 0.8,
+    "motion_burst_duration": [
+      2.0,
+      4.0
+    ],
+    "dropout_scale": 0.05,
+    "dropout_duration": [
+      2.0,
+      5.0
+    ]
+  },
+  "moderate": {
+    "description": "Moderate clinical disturbance: bed adjustment, patient repositioning, motion transient",
+    "hf_snr_db": 10.0,
+    "baseline_drift_scale": 0.85,
+    "motion_burst_scale": 2.0,
+    "motion_burst_duration": [
+      5.0,
+      10.0
+    ],
+    "dropout_scale": 0.01,
+    "dropout_duration": [
+      6.0,
+      12.0
+    ]
+  },
+  "severe": {
+    "description": "Severe clinical disturbance: intense ambulation, limb tremor, sensor displacement / probe slip",
+    "hf_snr_db": 3.0,
+    "baseline_drift_scale": 2.0,
+    "motion_burst_scale": 4.0,
+    "motion_burst_duration": [
+      12.0,
+      25.0
+    ],
+    "dropout_scale": 0.0,
+    "dropout_duration": [
+      15.0,
+      30.0
+    ]
+  }
+}

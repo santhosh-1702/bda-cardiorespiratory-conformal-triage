@@ -1,0 +1,34 @@
+================================================================================
+  ARTIFACT-RESILIENT CARDIORESPIRATORY TRIAGE: CONFORMAL EVALUATION REPORT
+================================================================================
+Validation-Chosen Window Duration: 60 s (strictly selected per fold)
+Target Confidence Level:          90.0% (alpha = 0.10)
+Evaluation Cohort:                53 BIDMC ICU Patients (5-fold Patient-Disjoint CV)
+
+1. Predictive Accuracy (Mean Test MAE):
+   - Trivial Baseline (Train Median):  2.1215 bpm
+   - Retrained XGBoost:               1.7801 bpm
+
+2. Empirical Conformal Coverage (Target: 90.0%):
+   - Trivial Baseline (Train Median):  85.17% (Width: 10.51 bpm)
+   - XGBoost (Absolute Residual):      86.80% (Width: 9.86 bpm)
+   - XGBoost (Difficulty-Normalised):  88.10% (Width: 10.72 bpm)
+   - XGBoost (Mondrian Terciles):      85.44% (Width: 9.25 bpm)
+   - XGBoost (Model-Free Sharpness):   85.89% (Width: 10.13 bpm)
+
+3. Patient-Level Coverage & Undercoverage (< 85%):
+   - Trivial Baseline:  83.48% ± 31.93% | Min: 0.00% | Undercovered: 24.5%
+   - Absolute Residual: 85.25% ± 28.31% | Min: 0.00% | Undercovered: 28.3%
+   - Difficulty-Norm:   86.64% ± 27.98% | Min: 0.00% | Undercovered: 18.9%
+   - Mondrian Terciles: 83.89% ± 28.54% | Min: 0.00% | Undercovered: 32.1%
+   - Spectral Sharp:    84.37% ± 29.58% | Min: 0.00% | Undercovered: 26.4%
+
+4. Selective Prediction (Large Error > 3 bpm Detection AUROC):
+   - Trivial Baseline:                 2.1215 bpm -> N/A (width constant)
+   - XGBoost (Absolute Residual):      N/A (width constant)
+   - XGBoost (Difficulty-Normalised):  AUROC = 0.5911
+   - XGBoost (Mondrian Terciles):      AUROC = 0.4020
+   - XGBoost (Model-Free Sharpness):   AUROC = 0.4350
+
+================================================================================
+Status: Bit-Identical Determinism Verified | Zero Test Leakage Verified

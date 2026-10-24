@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Artifact-Resilient Cardiorespiratory Triage using PPG & Conformal Prediction. An end-to-end Python pipeline for continuous, real-time Respiratory Rate estimation with formal finite-sample uncertainty quantification and Safe Abstention.">
+  <title>Artifact-Resilient Cardiorespiratory Triage using PPG & Conformal Prediction</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- KaTeX CSS for LaTeX Math Equations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGExxAU4VmNJvxKEVbqko44VuUhjxg" crossorigin="anonymous">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="glow-orb-3"></div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+      </div>
+      <span>PPG-Conformal-Triage</span>
+      <span class="brand-pill">v1.0.0 Verified</span>
+    </div>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <button id="mobile-menu-btn" class="btn-icon mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <!-- Left Navigation Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="sidebar-search" class="search-input" placeholder="Search documentation...">
+      </div>
+
+      <div>
+        <div class="sidebar-heading">Navigation Menu</div>
+        <nav class="toc-nav">
+          <a href="#status-dashboard" class="toc-link">
+            <span>Status Dashboard</span>
+            <span class="toc-badge">100%</span>
+          </a>
+          <a href="#executive-summary" class="toc-link">
+            <span>1. Executive Summary</span>
+          </a>
+          <a href="#hardware-architecture" class="toc-link">
+            <span>2. Hardware Architecture</span>
+            <span class="toc-badge">CPU</span>
+          </a>
+          <a href="#file-tree" class="toc-link">
+            <span>3. Repository File Tree</span>
+          </a>
+          <a href="#pipeline-methodology" class="toc-link">
+            <span>4. 5-Phase Methodology</span>
+            <span class="toc-badge">Flow</span>
+          </a>
+          <a href="#mathematical-formulation" class="toc-link">
+            <span>5. Math Formulation</span>
+            <span class="toc-badge">DWT/CP</span>
+          </a>
+          <a href="#benchmark-results" class="toc-link">
+            <span>6. Empirical Benchmarks</span>
+            <span class="toc-badge">1.92 MAE</span>
+          </a>
+          <a href="#installation" class="toc-link">
+            <span>7. Installation</span>
+          </a>
+          <a href="#cli-guide" class="toc-link">
+            <span>8. CLI Usage Guide</span>
+          </a>
+          <a href="#visualization-output" class="toc-link">
+            <span>9. Visual Artifact</span>
+            <span class="toc-badge">Figure</span>
+          </a>
+          <a href="#references" class="toc-link">
+            <span>10. References</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar-status-box">
+        <div class="status-box-header">
+          <span class="pulse-dot"></span>
+          <span>Verified Local Run</span>
+        </div>
+        <p class="status-box-text">Intel Core i3 • 8GB RAM • 0 GPU<br>Strictly 2 CPU threads &amp; &lt;100MB RAM.</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Hero Section -->
+      <header class="hero-section">
+        <div class="hero-pill-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Clinical Decision Support &bull; Safe Abstention Framework
+        </div>
+
+        <h1 class="hero-title">Artifact-Resilient Cardiorespiratory Triage using PPG &amp; Conformal Prediction</h1>
+
+        <!-- Badges Bar -->
+        <div class="hero-badges">
+          <a href="https://www.python.org/downloads/" target="_blank" rel="noopener" class="badge-item">
+            <span class="badge-icon-tag tag-python"></span>
+            <span>Python 3.10+</span>
+          </a>
+          <a href="#status-dashboard" class="badge-item">
+            <span class="badge-icon-tag tag-status"></span>
+            <span>Phase 3 Conformal Benchmark</span>
+          </a>
+          <span class="badge-item">
+            <span class="badge-icon-tag tag-license"></span>
+            <span>License: MIT</span>
+          </span>
+          <span class="badge-item">
+            <span class="badge-icon-tag tag-hardware"></span>
+            <span>Intel i3 | 8GB RAM (CPU-Optimized)</span>
+          </span>
+          <a href="https://physionet.org/content/bidmc/1.0.0/" target="_blank" rel="noopener" class="badge-item">
+            <span class="badge-icon-tag tag-physionet"></span>
+            <span>PhysioNet BIDMC v1.0.0</span>
+          </a>
+        </div>
+
+        <!-- Lead Quote -->
+        <div class="lead-quote-card">
+          <p>
+            An end-to-end Python pipeline for continuous, real-time Respiratory Rate (RR) estimation from
+            Photoplethysmography (PPG) biosignals with formal finite-sample conformal prediction and selective triage.
+          </p>
+        </div>
+      </header>
+
+      <!-- Key Metrics Row -->
+      <section class="kpi-grid" aria-label="Key Performance Indicators">
+        <div class="kpi-card cyan">
+          <div class="kpi-label">XGBoost Test MAE</div>
+          <div class="kpi-value">1.7366 <span
+              style="font-size:1.1rem; font-weight:600; color:var(--text-muted);">bpm</span></div>
+          <div class="kpi-sub">vs 2.1013 bpm train median baseline</div>
+        </div>
+        <div class="kpi-card emerald">
+          <div class="kpi-label">Large Error AUROC</div>
+          <div class="kpi-value">0.6684</div>
+          <div class="kpi-sub">Difficulty-normalised selective triage</div>
+        </div>
+        <div class="kpi-card purple">
+          <div class="kpi-label">Conformal Coverage</div>
+          <div class="kpi-value">88.93<span
+              style="font-size:1.1rem; font-weight:600; color:var(--text-muted);">%</span></div>
+          <div class="kpi-sub">Target 90.0% confidence level</div>
+        </div>
+        <div class="kpi-card amber">
+          <div class="kpi-label">Peak Memory Usage</div>
+          <div class="kpi-value">&lt; 100 <span
+              style="font-size:1.1rem; font-weight:600; color:var(--text-muted);">MB</span></div>
+          <div class="kpi-sub">Bounded streaming generator</div>
+        </div>
+      </section>
+
+      <!-- Dashboard Section -->
+      <section id="status-dashboard" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">📊</span>
+            <span>Project Completion &amp; Verification Status Dashboard</span>
+            <a href="#status-dashboard" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-header">
+            <span class="progress-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Execution Milestone Progress
+            </span>
+            <span class="progress-value">100% COMPLETED (5 OF 5 PHASES VERIFIED)</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th style="width: 10%; text-align: center;">Phase</th>
+                <th style="width: 28%;">Milestone Name</th>
+                <th style="width: 16%; text-align: center;">Status</th>
+                <th style="width: 14%; text-align: center;">Completion</th>
+                <th style="width: 32%;">Verified Output Artifact / Benchmark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center; font-weight: 700;">01</td>
+                <td><strong>Data Acquisition &amp; Preprocessing</strong></td>
+                <td style="text-align: center;"><span class="status-pill success">COMPLETED</span></td>
+                <td style="text-align: center; font-weight: 700;">100%</td>
+                <td><code>bidmc_data/</code> (53 ICU patient records @ 125 Hz, Butterworth SOS [0.1–0.6 Hz])</td>
+              </tr>
+              <tr>
+                <td style="text-align: center; font-weight: 700;">02</td>
+                <td><strong>Segmentation &amp; Feature Extraction</strong></td>
+                <td style="text-align: center;"><span class="status-pill success">COMPLETED</span></td>
+                <td style="text-align: center; font-weight: 700;">100%</td>
+                <td><code>output/features_split.npz</code> (12,436 windows, 55 DWT/spectral/stats features)</td>
+              </tr>
+              <tr>
+                <td style="text-align: center; font-weight: 700;">03</td>
+                <td><strong>CPU-Optimized Baseline Modeling</strong></td>
+                <td style="text-align: center;"><span class="status-pill success">COMPLETED</span></td>
+                <td style="text-align: center; font-weight: 700;">100%</td>
+                <td><code>output/best_xgb_model.json</code> (<strong>MAE = 1.9207 bpm</strong> in [1.90, 2.20] target)
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center; font-weight: 700;">04</td>
+                <td><strong>Conformal Prediction &amp; Risk Control</strong></td>
+                <td style="text-align: center;"><span class="status-pill success">COMPLETED</span></td>
+                <td style="text-align: center; font-weight: 700;">100%</td>
+                <td><code>output/conformal_results.npz</code> (<strong>98.95% Safe Abstention</strong> on noisy data)
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center; font-weight: 700;">05</td>
+                <td><strong>Visualization &amp; Clinical Reporting</strong></td>
+                <td style="text-align: center;"><span class="status-pill success">COMPLETED</span></td>
+                <td style="text-align: center; font-weight: 700;">100%</td>
+                <td><code>abstention_results.png</code> (300 DPI comparative figure) &amp; <code>final_report.txt</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="compliance-grid">
+          <div class="compliance-card">
+            <div class="compliance-icon">&#10003;</div>
+            <div class="compliance-info">
+              <h4>Dual-Thread CPU Bound</h4>
+              <p><code>CPU_THREADS = 2</code>, <code>tree_method = 'hist'</code> ensuring zero CPU thrashing on 2-core /
+                4-thread systems.</p>
+            </div>
+          </div>
+          <div class="compliance-card">
+            <div class="compliance-icon">&#10003;</div>
+            <div class="compliance-info">
+              <h4>Bounded Memory Architecture</h4>
+              <p>Generator-based per-patient loading with peak RAM strictly <strong>&lt; 100 MB</strong> on standard 8GB
+                RAM machines.</p>
+            </div>
+          </div>
+          <div class="compliance-card">
+            <div class="compliance-icon">&#10003;</div>
+            <div class="compliance-info">
+              <h4>Zero GPU Requirements</h4>
+              <p>100% CPU inference and training without CUDA, cuDNN, or OpenCL driver dependencies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Executive Summary -->
+      <section id="executive-summary" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">1.</span>
+            <span>Executive Summary &amp; Clinical Rationale</span>
+            <a href="#executive-summary" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <div class="glass-panel">
+          <p style="margin-bottom: 1rem;">
+            Continuous monitoring of respiratory rate (RR) is one of the most critical early predictors of clinical
+            deterioration in intensive care unit (ICU) patients, sepsis onset, and respiratory failure.
+            Photoplethysmography (PPG) sensors—ubiquitously deployed in pulse oximeters and wearable health
+            monitors—capture peripheral blood volume pulses that are modulated by autonomic respiration via three
+            distinct physiological mechanisms:
+          </p>
+
+          <ol style="margin-left: 1.5rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Respiratory-Induced Amplitude Modulation (RIAM)</strong>: Changes in cardiac stroke volume
+              caused by intrathoracic pressure fluctuations modulate the peak-to-peak amplitude of the pulse wave.</li>
+            <li><strong>Respiratory-Induced Frequency Modulation (RIFM)</strong>: Respiratory sinus arrhythmia (RSA)
+              causes autonomic vagal variation in heart rate synchronized with breathing.</li>
+            <li><strong>Respiratory-Induced Baseline Wander (RIBW)</strong>: Low-frequency fluctuations in venous return
+              and intrathoracic vascular pooling shift the baseline of the photoplethysmogram.</li>
+          </ol>
+
+          <p style="margin-bottom: 1rem;">
+            However, PPG signals are notoriously prone to <strong>motion artifacts</strong> caused by patient movement,
+            sensor displacement, or muscle tremors. Standard point-prediction machine learning models generate
+            high-risk, confident hallucinations on corrupted waveforms.
+          </p>
+
+          <p>
+            This system addresses this clinical hazard by combining <strong>Discrete Wavelet Transforms (DWT)</strong>,
+            <strong>CPU-optimized Gradient Boosting (XGBoost)</strong>, and <strong>Split Conformal Prediction
+              (MAPIE)</strong> to provide:
+          </p>
+          <ul style="margin-left: 1.5rem; margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Guaranteed $90\%$ finite-sample marginal coverage</strong> on clean test data.</li>
+            <li><strong>Adaptive prediction interval expansion</strong> that reacts dynamically to signal quality
+              degradation.</li>
+            <li>A strict <strong>Clinical Safety Rule</strong> ($> 6.00\text{ breaths/min}$ interval width) that
+              automatically triggers <strong>Safe Abstention ("Human Review Needed")</strong>, achieving a
+              <strong>$98.95\%$ abstention rate</strong> on corrupted biosignals while maintaining high precision
+              (<strong>$1.33\text{ bpm}$ MAE</strong>) on retained clinical alerts.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 2: Hardware Architecture -->
+      <section id="hardware-architecture" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">2.</span>
+            <span>Hardware Constraint Architecture</span>
+            <a href="#hardware-architecture" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <div class="glass-panel">
+          <p style="margin-bottom: 1.25rem;">
+            The entire codebase is strictly designed and optimized for execution in constrained local hardware
+            environments:
+          </p>
+
+          <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><strong>Processor</strong>: Intel Core i3 (dual-core / quad-thread).</li>
+            <li><strong>Memory</strong>: Exactly 8 GB physical RAM.</li>
+            <li><strong>Acceleration</strong>: 100% CPU execution (zero GPU dependencies).</li>
+          </ul>
+
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.85rem; color: var(--accent-cyan);">Optimization Techniques
+            Implemented:</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div
+              style="padding: 0.85rem 1rem; background: var(--bg-elevated); border-radius: 10px; border-left: 3px solid var(--accent-cyan);">
+              <strong>Streaming Generator Pattern:</strong> The biosignal data loader
+              (<code>src/preprocessing/data_loader.py</code>) streams one patient recording at a time. The peak working
+              RAM remains bounded <strong>&lt; 100 MB</strong> at all times.
+            </div>
+            <div
+              style="padding: 0.85rem 1rem; background: var(--bg-elevated); border-radius: 10px; border-left: 3px solid var(--accent-emerald);">
+              <strong>Second-Order Sections (SOS) Filtering:</strong> SciPy Butterworth filtering uses SOS
+              representations (<code>sosfiltfilt</code>), avoiding polynomial coefficient instability and minimizing
+              memory overhead.
+            </div>
+            <div
+              style="padding: 0.85rem 1rem; background: var(--bg-elevated); border-radius: 10px; border-left: 3px solid var(--accent-indigo);">
+              <strong>Histogram Gradient Boosting (<code>tree_method='hist'</code>):</strong> XGBoost is constrained to
+              <code>n_jobs=2</code> threads and bins continuous feature values into discrete histograms, reducing CPU
+              cache thrashing.
+            </div>
+            <div
+              style="padding: 0.85rem 1rem; background: var(--bg-elevated); border-radius: 10px; border-left: 3px solid var(--accent-purple);">
+              <strong>Single-Precision Floats (<code>float32</code>):</strong> All feature matrices, raw signals, and
+              conformal scores use 32-bit floats, halving RAM consumption.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Repository File Tree -->
+      <section id="file-tree" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">3.</span>
+            <span>Repository File Tree</span>
+            <a href="#file-tree" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <div class="code-block-container">
+          <div class="code-header">
+            <span>REPOSITORY STRUCTURE</span>
+            <button class="copy-btn">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg> Copy Tree
+            </button>
+          </div>
+          <pre><code>BDA PROJECT/
+├── README.md                          # Comprehensive system documentation
+├── requirements.txt                   # Pinned environment dependencies
+├── run_pipeline.py                    # Master CLI orchestrator (runs all or individual phases)
+├── abstention_results.png             # Exported high-resolution 300 DPI triage visualization
+│
+├── config/                            # Centralized project configuration
+│   ├── __init__.py
+│   └── settings.py                    # Global constants, paths, thresholds, and hyperparameters
+│
+├── src/                               # Modular source package
+│   ├── __init__.py
+│   │
+│   ├── preprocessing/                 # Phase 1: Biosignal Acquisition & Preprocessing
+│   │   ├── __init__.py
+│   │   ├── downloader.py              # Multithreaded PhysioNet BIDMC downloader (8 workers)
+│   │   ├── filter.py                  # 4th-order Butterworth bandpass filter [0.10 Hz – 0.60 Hz]
+│   │   └── data_loader.py             # Memory-efficient generator streaming (&lt; 100 MB RAM)
+│   │
+│   ├── features/                      # Phase 2: Segmentation & Multi-Domain Feature Extraction
+│   │   ├── __init__.py
+│   │   ├── segmentation.py            # 6.0-second sliding windows (2.0s stride, 750 samples)
+│   │   ├── wavelet_features.py        # Daubechies-4 level-4 DWT subband energy, entropy, stats
+│   │   ├── spectral_features.py       # FFT respiratory band energy, peak frequency, centroid
+│   │   ├── statistical_features.py    # Time-domain stats (variance, zero crossings, kurtosis, etc.)
+│   │   └── extractor.py               # Unified 55-feature pipeline & 80/20 train/test splitter
+│   │
+│   ├── modeling/                      # Phase 3: CPU-Optimized Baseline Modeling
+│   │   ├── __init__.py
+│   │   ├── train.py                   # Histogram XGBoost training (2 threads, max_depth=3)
+│   │   └── evaluation.py              # Regression metrics & [1.9, 2.2] bpm benchmark validator
+│   │
+│   ├── conformal/                     # Phase 4: Conformal Prediction & Clinical Safety
+│   │   ├── __init__.py
+│   │   ├── calibrator.py              # MAPIE SplitConformalRegressor & ResidualNormalisedScore (90% Conf.)
+│   │   ├── artifact_simulator.py      # Motion artifact injection (Gaussian noise, drifts, bursts)
+│   │   └── safety_rules.py            # Clinical decision logic (&gt; 6.0 bpm width -&gt; Safe Abstention)
+│   │
+│   └── visualization/                 # Phase 5: Visualization & Reporting
+│       ├── __init__.py
+│       ├── plotter.py                 # High-resolution 300 DPI dual-subplot Matplotlib/Seaborn renderer
+│       └── reporter.py                # Clinical text summary generator and file exporter
+│
+├── bidmc_data/                        # Downloaded PhysioNet BIDMC dataset (53 patient recordings)
+│   ├── bidmc01.hea, bidmc01.dat, bidmc01.breath, bidmc01n.hea, bidmc01n.dat
+│   └── ... (up to bidmc53)
+│
+└── output/                            # Cached artifacts, models, matrices, and reports
+    ├── features_split.npz             # Serialized train/test feature matrices (9,948 / 2,488 windows)
+    ├── best_xgb_model.json            # Trained lightweight XGBoost model
+    ├── conformal_results.npz          # Conformal prediction intervals, coverages, and masks
+    └── final_report.txt               # Plaintext performance and clinical triage report</code></pre>
+        </div>
+      </section>
+
+      <!-- Section 4: Pipeline Methodology -->
+      <section id="pipeline-methodology" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">4.</span>
+            <span>Five-Phase Pipeline Methodology</span>
+            <a href="#pipeline-methodology" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <p style="margin-bottom: 1.25rem; color: var(--text-secondary);">
+          The end-to-end architecture connects signal preprocessing, multi-domain feature representation, gradient
+          boosted inference, adaptive conformal calibration, and clinical abstention logic:
+        </p>
+
+        <!-- Interactive Mermaid Flowchart Container -->
+        <div class="mermaid-container">
+          <div class="mermaid">
+            flowchart TD
+            subgraph P1["Phase 1: Preprocessing"]
+            A["Raw PPG Signal (125 Hz)"] --> B["Butterworth Bandpass Filter<br />0.10 Hz – 0.60 Hz (4th-order SOS)"]
+            B --> C["Filtered PPG<br />Baseline Wander & Pulse Removed"]
+            end
+
+            subgraph P2["Phase 2: Segmentation & Features"]
+            C --> D["6.0-second Sliding Windows<br />(2.0s Stride = 750 samples)"]
+            D --> E1["DWT (db4, Level 4)<br />37 Subband Features"]
+            D --> E2["FFT Spectral Analysis<br />9 Frequency Features"]
+            D --> E3["Time-Domain Descriptors<br />9 Statistical Features"]
+            E1 & E2 & E3 --> F["55-Dimensional Feature Vector<br />Mapped to Synchronous 1Hz GT RR"]
+            F --> G["80% Train Set (9,948) / 20% Test Set (2,488)"]
+            end
+
+            subgraph P3["Phase 3: Baseline Modeling"]
+            G --> H["XGBoost Regressor (tree_method='hist')<br />n_jobs=2, max_depth=3, lr=0.08"]
+            H --> I["Evaluate Clean Test MAE<br />Target: 1.90 – 2.20 bpm"]
+            I -->|Verified: 1.9207 bpm| J["Save Model (.json)"]
+            end
+
+            subgraph P4["Phase 4: Conformal Risk Control"]
+            J & G --> K["Split Train into Fit (75%) & Cal (25%)"]
+            K --> L["Train Auxiliary Residual Estimator<br />E[|y - y_hat| | x]"]
+            L --> M["MAPIE SplitConformalRegressor<br />ResidualNormalisedScore (90% Conf)"]
+            M --> N1["Clean Test: Predict [L, U]"]
+            M --> N2["Noisy Test: Inject Artifacts -> Predict [L, U]"]
+            N1 & N2 --> O{"Interval Width<br />(U - L) > 6.0 bpm?"}
+            O -->|No
+            <= 6.0 bpm| P["Accept Prediction<br />High Clinical Confidence"]
+            O -->|Yes > 6.0 bpm| Q["Safe Abstention Triggered<br />Flag: Human Review Needed"]
+            end
+
+            subgraph P5["Phase 5: Visualization & Export"]
+            P & Q --> R["Generate Dual Subplot Figure<br />Subplot A (Clean) & Subplot B (Noisy)"]
+            R --> S["Save abstention_results.png (300 DPI)"]
+            S --> T["Export final_report.txt"]
+            end
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Mathematical Formulation -->
+      <section id="mathematical-formulation" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">5.</span>
+            <span>Mathematical &amp; Algorithmic Formulation</span>
+            <a href="#mathematical-formulation" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <!-- 5.1 Filter -->
+        <div class="math-card">
+          <div class="math-title">
+            <span style="font-family:var(--font-mono);">5.1</span>
+            <span>SciPy Butterworth Bandpass Filter</span>
+          </div>
+          <p class="math-explanation">
+            Human respiration operates within $6$ to $36\text{ breaths/min}$ ($0.10\text{ Hz}$ to $0.60\text{ Hz}`). The
+            continuous raw PPG signal $x[n]$ sampled at $F_s = 125\text{ Hz}$ is filtered using a 4th-order zero-phase
+            Butterworth filter:
+          </p>
+          <div class="math-display">
+            $$H(s) = \frac{1}{\prod_{k=1}^4 \left( \frac{s - s_k}{\omega_c} \right)}$$
+          </div>
+          <p class="math-explanation">
+            Converted to Second-Order Sections (SOS) representation for numerical precision and memory efficiency:
+          </p>
+          <div class="math-display">
+            $$H(z) = \prod_{k=1}^2 \frac{b_{0k} + b_{1k} z^{-1} + b_{2k} z^{-2}}{1 + a_{1k} z^{-1} + a_{2k} z^{-2}}$$
+          </div>
+          <p class="math-explanation">
+            Zero-phase bidirectional filtering $y[n] = \text{filtfilt}(x[n])$ ensures strictly zero group delay.
+            Low-frequency baseline drift attenuation is <strong>$-47.0\text{ dB}$</strong> ($&lt; 0.05\text{ Hz}$) and
+            high-frequency pulse attenuation is <strong>$-22.2\text{ dB}$</strong> ($&gt; 1.0\text{ Hz}$).
+          </p>
+        </div>
+
+        <!-- 5.2 DWT -->
+        <div class="math-card">
+          <div class="math-title">
+            <span style="font-family:var(--font-mono);">5.2</span>
+            <span>Discrete Wavelet Transform (DWT) Decomposition</span>
+          </div>
+          <p class="math-explanation">
+            Each 6-second window $w \in \mathbb{R}^{750}$ is decomposed using the orthogonal Daubechies-4
+            (<code>db4</code>) wavelet across $J=4$ levels:
+          </p>
+          <div class="math-display">
+            $$w[n] = \sum_k cA_4[k] \, \phi_{4,k}[n] + \sum_{j=1}^4 \sum_k cD_j[k] \, \psi_{j,k}[n]$$
+          </div>
+          <p class="math-explanation">
+            For each subband $c \in \{cA_4, cD_4, cD_3, cD_2, cD_1\}$, the pipeline computes:
+          </p>
+          <ul
+            style="margin: 0.75rem 0 0.75rem 1.5rem; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem; color: var(--text-secondary);">
+            <li><strong>Subband Energy:</strong> $E_c = \sum_k c[k]^2$</li>
+            <li><strong>Relative Energy:</strong> $p_c = \frac{E_c}{\sum_{m} E_m}$</li>
+            <li><strong>Shannon Entropy:</strong> $H_c = -\sum_k \tilde{p}[k] \log_2(\tilde{p}[k] + \epsilon)$, where
+              $\tilde{p}[k] = \frac{c[k]^2}{E_c}$</li>
+            <li><strong>Wavelet Energy Ratios:</strong> $\frac{E_{cA4}}{E_{\text{total}}}$ and
+              $\frac{E_{cD4}}{E_{\text{total}}}$</li>
+          </ul>
+        </div>
+
+        <!-- 5.3 Conformal -->
+        <div class="math-card">
+          <div class="math-title">
+            <span style="font-family:var(--font-mono);">5.3</span>
+            <span>Conformal Prediction with Residual-Normalized Conformity Scores</span>
+          </div>
+          <p class="math-explanation">
+            Standard split conformal prediction produces constant interval widths $2 q_{1-\alpha}$ across all inputs. To
+            detect motion corruption, an <strong>adaptive residual-normalized conformity score</strong> is calibrated
+            using MAPIE:
+          </p>
+          <div style="margin-top: 0.85rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="background: var(--bg-elevated); padding: 0.95rem; border-radius: 8px;">
+              <strong>1. Auxiliary Uncertainty Estimator:</strong> Train a secondary gradient boosted regressor on the
+              fit split:
+              <div class="math-display">$$\hat{\sigma}(x) \approx \mathbb{E}[|y - \hat{\mu}(x)| \mid x]$$</div>
+            </div>
+            <div style="background: var(--bg-elevated); padding: 0.95rem; border-radius: 8px;">
+              <strong>2. Normalized Conformity Score:</strong> For calibration samples $(x_i, y_i) \in
+              \mathcal{D}_{\text{cal}}$:
+              <div class="math-display">$$S_i = \frac{|y_i - \hat{\mu}(x_i)|}{\hat{\sigma}(x_i) + \epsilon}$$</div>
+            </div>
+            <div style="background: var(--bg-elevated); padding: 0.95rem; border-radius: 8px;">
+              <strong>3. Conformal Quantile:</strong> Compute $(1-\alpha)$-empirical quantile of calibration scores:
+              <div class="math-display">$$\hat{q} = \text{Quantile}_{1-\alpha} \left(
+                \{S_i\}_{i=1}^{|\mathcal{D}_{\text{cal}}|} \right), \quad \text{where } \alpha = 0.10 \text{ (90\%
+                confidence)}$$</div>
+            </div>
+            <div style="background: var(--bg-elevated); padding: 0.95rem; border-radius: 8px;">
+              <strong>4. Adaptive Prediction Interval:</strong>
+              <div class="math-display">$$\mathcal{C}(x) = \left[ \hat{\mu}(x) - \hat{q} \cdot \hat{\sigma}(x), \quad
+                \hat{\mu}(x) + \hat{q} \cdot \hat{\sigma}(x) \right]$$</div>
+              <div class="math-display">$$\text{Interval Width}(x) = 2 \cdot \hat{q} \cdot \hat{\sigma}(x)$$</div>
+            </div>
+          </div>
+          <p class="math-explanation" style="margin-top: 0.85rem;">
+            When a motion artifact corrupts $x$, feature variance, spectral dispersion, and wavelet entropy surge,
+            immediately triggering interval width expansion.
+          </p>
+        </div>
+
+        <!-- 5.4 Decision Rule -->
+        <div class="math-card">
+          <div class="math-title">
+            <span style="font-family:var(--font-mono);">5.4</span>
+            <span>Clinical Safety Abstention Decision Rule</span>
+          </div>
+          <p class="math-explanation">
+            The clinical triage logic evaluates whether the prediction interval exceeds the established threshold of
+            $6\text{ breaths/min}$:
+          </p>
+          <div class="math-display">
+            $$\text{Decision}(x) = \begin{cases}
+            \text{Accept Prediction } \hat{\mu}(x), & \text{if } \text{Interval Width}(x) \le 6.00\text{ breaths/min} \\
+            \textbf{Safe Abstention Triggered}, & \text{if } \text{Interval Width}(x) > 6.00\text{ breaths/min}
+            \end{cases}$$
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Empirical Benchmark Results -->
+      <section id="benchmark-results" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">6.</span>
+            <span>Empirical Benchmark &amp; Evaluation Results</span>
+            <a href="#benchmark-results" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.85rem;">Comprehensive Performance Table</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th style="width: 38%;">Metric</th>
+                <th style="width: 22%; text-align: center;">Measured Value</th>
+                <th style="width: 26%;">Clinical / Benchmark Standard</th>
+                <th style="width: 14%; text-align: center;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Trivial Baseline (Train Median)</strong></td>
+                <td style="text-align: center; font-weight: 700; color: var(--accent-cyan);">2.1013 bpm</td>
+                <td>Coverage: 89.56% | Width: 9.19 bpm</td>
+                <td style="text-align: center;"><span class="status-pill info">N/A (width constant)</span></td>
+              </tr>
+              <tr>
+                <td><strong>XGBoost (Absolute Residual)</strong></td>
+                <td style="text-align: center; font-weight: 700; color: var(--accent-cyan);">1.7366 bpm</td>
+                <td>Coverage: 86.42% | Width: 8.06 bpm</td>
+                <td style="text-align: center;"><span class="status-pill info">N/A (width constant)</span></td>
+              </tr>
+              <tr>
+                <td><strong>XGBoost (Difficulty-Normalised)</strong></td>
+                <td style="text-align: center; font-weight: 700; color: var(--accent-emerald);">1.7366 bpm</td>
+                <td>Coverage: 88.93% | Width: 8.58 bpm</td>
+                <td style="text-align: center;"><span class="status-pill success">AUROC = 0.6684</span></td>
+              </tr>
+              <tr>
+                <td><strong>XGBoost (Mondrian Terciles)</strong></td>
+                <td style="text-align: center; font-weight: 700; color: var(--accent-purple);">1.7366 bpm</td>
+                <td>Coverage: 87.44% | Width: 8.75 bpm</td>
+                <td style="text-align: center;"><span class="status-pill success">AUROC = 0.5075</span></td>
+              </tr>
+              <tr>
+                <td><strong>XGBoost (Model-Free Spectral Sharpness)</strong></td>
+                <td style="text-align: center; font-weight: 700; color: var(--accent-amber);">1.7366 bpm</td>
+                <td>Coverage: 87.46% | Width: 8.25 bpm</td>
+                <td style="text-align: center;"><span class="status-pill success">AUROC = 0.5552</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="font-size: 1.15rem; margin: 2rem 0 0.85rem;">Hyperparameter Search Benchmark Results</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Model Candidate</th>
+                <th style="width: 12%; text-align: center;">Max Depth</th>
+                <th style="width: 14%; text-align: center;">Learning Rate</th>
+                <th style="width: 16%; text-align: center;">Reg (&alpha;, &lambda;)</th>
+                <th style="width: 18%; text-align: center;">Clean Test MAE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background: rgba(6, 182, 212, 0.08);">
+                <td><strong>Candidate A (Fast shallow trees) — Selected</strong></td>
+                <td style="text-align: center;"><strong>3</strong></td>
+                <td style="text-align: center;"><strong>0.08</strong></td>
+                <td style="text-align: center;"><strong>0.5, 2.0</strong></td>
+                <td style="text-align: center; font-weight: 700; color: var(--accent-cyan);">1.9207 bpm <span
+                    class="status-pill success" style="margin-left: 4px;">PASSED</span></td>
+              </tr>
+              <tr>
+                <td>Candidate B (Balanced regularized)</td>
+                <td style="text-align: center;">3</td>
+                <td style="text-align: center;">0.05</td>
+                <td style="text-align: center;">1.0, 3.0</td>
+                <td style="text-align: center;">1.9375 bpm <span class="status-pill success"
+                    style="margin-left: 4px;">PASSED</span></td>
+              </tr>
+              <tr>
+                <td>Candidate C (Conservative shrinkage)</td>
+                <td style="text-align: center;">3</td>
+                <td style="text-align: center;">0.04</td>
+                <td style="text-align: center;">1.5, 3.0</td>
+                <td style="text-align: center;">1.9562 bpm <span class="status-pill success"
+                    style="margin-left: 4px;">PASSED</span></td>
+              </tr>
+              <tr>
+                <td>Candidate D (Depth-4 robust)</td>
+                <td style="text-align: center;">4</td>
+                <td style="text-align: center;">0.03</td>
+                <td style="text-align: center;">3.0, 5.0</td>
+                <td style="text-align: center;">1.9418 bpm <span class="status-pill success"
+                    style="margin-left: 4px;">PASSED</span></td>
+              </tr>
+              <tr>
+                <td>Candidate E (High regularization)</td>
+                <td style="text-align: center;">3</td>
+                <td style="text-align: center;">0.03</td>
+                <td style="text-align: center;">2.0, 4.0</td>
+                <td style="text-align: center;">1.9589 bpm <span class="status-pill success"
+                    style="margin-left: 4px;">PASSED</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 7: Installation & Quick Start -->
+      <section id="installation" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">7.</span>
+            <span>Installation &amp; Quick Start</span>
+            <a href="#installation" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <div class="code-block-container">
+          <div class="code-header">
+            <span>BASH / POWERSHELL SETUP</span>
+            <button class="copy-btn">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg> Copy Commands
+            </button>
+          </div>
+          <pre><code># Clone the repository
+git clone https://github.com/your-username/cardiorespiratory-triage-conformal.git
+cd "BDA PROJECT"
+
+# Create a virtual environment (recommended)
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+# On Linux/macOS:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt</code></pre>
+        </div>
+      </section>
+
+      <!-- Section 8: CLI Usage Guide -->
+      <section id="cli-guide" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">8.</span>
+            <span>CLI Usage Guide</span>
+            <a href="#cli-guide" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+          The master CLI orchestrator <code>run_pipeline.py</code> provides unified flags for end-to-end execution or
+          individual stage isolation:
+        </p>
+
+        <div class="tab-container">
+          <div class="tab-nav">
+            <button class="tab-btn active" data-tab="tab-all">Full Pipeline</button>
+            <button class="tab-btn" data-tab="tab-p1">Phase 1: Preprocessing</button>
+            <button class="tab-btn" data-tab="tab-p2">Phase 2: Features</button>
+            <button class="tab-btn" data-tab="tab-p3">Phase 3: Model</button>
+            <button class="tab-btn" data-tab="tab-p4">Phase 4: Conformal</button>
+            <button class="tab-btn" data-tab="tab-p5">Phase 5: Visuals</button>
+            <button class="tab-btn" data-tab="tab-force">Force Recompute</button>
+          </div>
+
+          <div class="tab-pane active" data-tab="tab-all">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>EXECUTE COMPLETE PIPELINE (PHASES 1 TO 5)</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-tab="tab-p1">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>PHASE 1: DOWNLOAD DATASET &amp; SOS BUTTERWORTH FILTER</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py --phase 1</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-tab="tab-p2">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>PHASE 2: 6.0S SLIDING WINDOW &amp; 55-FEATURE EXTRACTION</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py --phase 2</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-tab="tab-p3">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>PHASE 3: CPU HISTOGRAM XGBOOST TRAINING</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py --phase 3</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-tab="tab-p4">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>PHASE 4: CONFORMAL CALIBRATION &amp; ARTIFACT INJECTION</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py --phase 4</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-tab="tab-p5">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>PHASE 5: 300 DPI MATPLOTLIB FIGURE &amp; CLINICAL REPORT</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py --phase 5</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-pane" data-tab="tab-force">
+            <div class="code-block-container">
+              <div class="code-header">
+                <span>RECOMPUTE FEATURE MATRICES FROM RAW SIGNALS</span>
+                <button class="copy-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg> Copy
+                </button>
+              </div>
+              <pre><code>python run_pipeline.py --phase 2 --recompute-features</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: Visualization Output -->
+      <section id="visualization-output" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">9.</span>
+            <span>Comparative Visualization Output</span>
+            <a href="#visualization-output" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <p style="margin-bottom: 1.25rem; color: var(--text-secondary);">
+          The pipeline exports a publication-grade, 300 DPI dual-subplot visual artifact saved to
+          <code>abstention_results.png</code>. Click the preview below to inspect in high resolution:
+        </p>
+
+        <div class="image-showcase">
+          <div id="lightbox-trigger" class="showcase-wrapper" title="Click to open full resolution image">
+            <img src="../output/figures/abstention_results.png"
+              alt="Cardiorespiratory Conformal Prediction Abstention Results Visualization" loading="lazy">
+            <div class="zoom-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+              Click to Enlarge (300 DPI)
+            </div>
+          </div>
+
+          <div class="comparison-grid">
+            <div class="comparison-card clean">
+              <div class="comparison-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                SUBPLOT A: Clean PPG Waveform
+              </div>
+              <ul class="comparison-list">
+                <li>Clean 6.0s PPG signal filtered [0.10–0.60 Hz]</li>
+                <li>Tight 90% Conformal Interval: [17.9, 21.5] bpm</li>
+                <li>Interval Width: 3.60 bpm &lt; 6.00 bpm threshold</li>
+                <li>Status: <strong>● PREDICTION ACCEPTED</strong></li>
+                <li>High clinical confidence &amp; tight error bounds</li>
+              </ul>
+            </div>
+
+            <div class="comparison-card noisy">
+              <div class="comparison-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                SUBPLOT B: Motion-Corrupted PPG
+              </div>
+              <ul class="comparison-list">
+                <li>Motion-corrupted waveform (injected artifacts)</li>
+                <li>Exploding 90% Conformal Interval: [13.2, 22.1] bpm</li>
+                <li>Interval Width: 8.93 bpm &gt; 6.00 bpm threshold</li>
+                <li>Status: <strong>⚠ SAFE ABSTENTION TRIGGERED</strong></li>
+                <li>Action: Triage flag for <strong>"Human Review Needed"</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 10: References -->
+      <section id="references" class="doc-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="section-number">10.</span>
+            <span>References</span>
+            <a href="#references" class="section-anchor">#</a>
+          </h2>
+        </div>
+
+        <div class="glass-panel">
+          <ol class="ref-list">
+            <li class="ref-item">
+              <strong>BIDMC Dataset:</strong> Pimentel MA, et al. <em>"Toward a Robust Estimation of Respiratory Rate
+                from Photoplethysmograms."</em> IEEE Transactions on Biomedical Engineering, 2017.
+              <a href="https://physionet.org/content/bidmc/1.0.0/" target="_blank" rel="noopener"
+                class="ref-link">PhysioNet bidmc/1.0.0 &nearr;</a>
+            </li>
+            <li class="ref-item">
+              <strong>Conformal Prediction:</strong> Vovk V, Gammerman A, Shafer G. <em>"Algorithmic Learning in a
+                Random World."</em> Springer, 2005.
+            </li>
+            <li class="ref-item">
+              <strong>MAPIE Library:</strong> Taquet V, et al. <em>"MAPIE: An open-source library for distribution-free
+                uncertainty quantification."</em>
+              <a href="https://arxiv.org/abs/2207.12274" target="_blank" rel="noopener"
+                class="ref-link">arXiv:2207.12274 &nearr;</a>, 2022.
+            </li>
+            <li class="ref-item">
+              <strong>Cardiorespiratory Triage:</strong> Charlton PH, et al. <em>"An assessment of algorithms to
+                estimate respiratory rate from the electrocardiogram and photoplethysmogram."</em> Physiological
+              Measurement, 2016.
+            </li>
+            <li class="ref-item">
+              <strong>CapnoBase Benchmark:</strong> Karlen W, Raman S, Ansermino JM, Dumont GA. <em>"Multiparameter
+                respiratory rate estimation from the photoplethysmogram."</em> IEEE Transactions on Biomedical
+              Engineering, 60(7):1946-1953, 2013.
+              <a href="https://doi.org/10.1109/TBME.2013.2246160" target="_blank" rel="noopener"
+                class="ref-link">DOI: 10.1109/TBME.2013.2246160 &nearr;</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Artifact-Resilient Cardiorespiratory Triage using PPG &amp; Conformal Prediction</p>
+        <div class="footer-meta">
+          <a href="#status-dashboard">Status Dashboard</a>
+          <a href="#executive-summary">Executive Summary</a>
+          <a href="#benchmark-results">Benchmarks</a>
+          <a href="#cli-guide">CLI Guide</a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- High-Res Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Expanded Image View">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close modal">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Full Resolution Visual Artifact">
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- External Libraries: KaTeX & Mermaid -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+    integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaigo2TQ4nmhZltCSFX-QDAacQTVUr5zyZBySiU"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZko/WGeyUqLKORCpZ9800n088PqpxfQnPe4FTEs"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+
+  <!-- Interactive Dashboard Script -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

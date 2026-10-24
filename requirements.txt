@@ -1,0 +1,26 @@
+# ==============================================================================
+# Locked Production Dependency Versions
+# Verified on Python 3.10+ (CPU-Only Target: Intel i3 / 8GB RAM / No GPU)
+# ==============================================================================
+
+# Core Scientific & Data Processing
+numpy==2.5.3
+scipy==1.18.1
+pandas==2.3.3
+
+# Biosignal Processing & PhysioNet WFDB
+wfdb==4.3.1
+PyWavelets==1.10.0
+
+# Machine Learning & Conformal Prediction
+scikit-learn==1.9.1
+xgboost==3.4.1
+mapie==1.5.0
+
+# Data Visualization & Image Processing
+matplotlib==3.11.2
+seaborn==0.13.2
+pillow==12.3.0
+
+# Validation Reference Implementation
+neurokit2==0.2.13

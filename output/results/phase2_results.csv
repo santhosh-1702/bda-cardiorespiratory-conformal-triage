@@ -1,0 +1,6 @@
+Score_Function,Target_Coverage,Test_MAE_Mean,Empirical_Coverage_Mean,Empirical_Coverage_Std,Mean_Interval_Width,Patient_Coverage_Mean,Patient_Coverage_Std,Patient_Coverage_Min,Fraction_Patients_Undercovered_lt_85pct,AUROC_Large_Error_gt_3bpm
+trivial_median,0.90,2.1215,0.8517,0.1743,10.5067,0.8348,0.3193,0.0000,0.2453,N/A (width constant)
+absolute_residual,0.90,1.7801,0.8680,0.1079,9.8563,0.8525,0.2831,0.0000,0.2830,N/A (width constant)
+residual_normalised,0.90,1.7801,0.8810,0.1063,10.7205,0.8664,0.2798,0.0000,0.1887,0.5911
+mondrian_terciles,0.90,1.7801,0.8544,0.1099,9.2549,0.8389,0.2854,0.0000,0.3208,0.4020
+spectral_sharpness,0.90,1.7801,0.8589,0.1162,10.1314,0.8437,0.2958,0.0000,0.2642,0.4350
